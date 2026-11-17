@@ -1,0 +1,622 @@
+{
+  "GSM8K-test": [
+    {
+      "extra_training": false,
+      "one_pass": true,
+      "stock_qwen": true,
+      "three_refinement_proof": true,
+      "three_refinements": false
+    },
+    {
+      "extra_training": true,
+      "one_pass": false,
+      "stock_qwen": true,
+      "three_refinement_proof": true,
+      "three_refinements": false
+    },
+    {
+      "extra_training": false,
+      "one_pass": false,
+      "stock_qwen": false,
+      "three_refinement_proof": false,
+      "three_refinements": false
+    },
+    {
+      "extra_training": false,
+      "one_pass": false,
+      "stock_qwen": false,
+      "three_refinement_proof": true,
+      "three_refinements": false
+    },
+    {
+      "extra_training": false,
+      "one_pass": false,
+      "stock_qwen": true,
+      "three_refinement_proof": true,
+      "three_refinements": false
+    },
+    {
+      "extra_training": false,
+      "one_pass": false,
+      "stock_qwen": false,
+      "three_refinement_proof": true,
+      "three_refinements": false
+    },
+    {
+      "extra_training": false,
+      "one_pass": false,
+      "stock_qwen": true,
+      "three_refinement_proof": true,
+      "three_refinements": false
+    },
+    {
+      "extra_training": false,
+      "one_pass": false,
+      "stock_qwen": false,
+      "three_refinement_proof": true,
+      "three_refinements": false
+    },
+    {
+      "extra_training": false,
+      "one_pass": false,
+      "stock_qwen": false,
+      "three_refinement_proof": true,
+      "three_refinements": false
+    },
+    {
+      "extra_training": false,
+      "one_pass": false,
+      "stock_qwen": true,
+      "three_refinement_proof": true,
+      "three_refinements": false
+    },
+    {
+      "extra_training": false,
+      "one_pass": false,
+      "stock_qwen": true,
+      "three_refinement_proof": false,
+      "three_refinements": false
+    },
+    {
+      "extra_training": true,
+      "one_pass": true,
+      "stock_qwen": true,
+      "three_refinement_proof": false,
+      "three_refinements": false
+    },
+    {
+      "extra_training": false,
+      "one_pass": false,
+      "stock_qwen": false,
+      "three_refinement_proof": true,
+      "three_refinements": false
+    },
+    {
+      "extra_training": false,
+      "one_pass": false,
+      "stock_qwen": true,
+      "three_refinement_proof": true,
+      "three_refinements": false
+    },
+    {
+      "extra_training": false,
+      "one_pass": false,
+      "stock_qwen": true,
+      "three_refinement_proof": true,
+      "three_refinements": false
+    },
+    {
+      "extra_training": false,
+      "one_pass": false,
+      "stock_qwen": false,
+      "three_refinement_proof": true,
+      "three_refinements": false
+    },
+    {
+      "extra_training": false,
+      "one_pass": false,
+      "stock_qwen": true,
+      "three_refinement_proof": true,
+      "three_refinements": false
+    },
+    {
+      "extra_training": true,
+      "one_pass": false,
+      "stock_qwen": false,
+      "three_refinement_proof": true,
+      "three_refinements": true
+    },
+    {
+      "extra_training": false,
+      "one_pass": false,
+      "stock_qwen": true,
+      "three_refinement_proof": false,
+      "three_refinements": false
+    },
+    {
+      "extra_training": false,
+      "one_pass": false,
+      "stock_qwen": false,
+      "three_refinement_proof": true,
+      "three_refinements": false
+    },
+    {
+      "extra_training": false,
+      "one_pass": false,
+      "stock_qwen": false,
+      "three_refinement_proof": true,
+      "three_refinements": false
+    },
+    {
+      "extra_training": false,
+      "one_pass": false,
+      "stock_qwen": false,
+      "three_refinement_proof": true,
+      "three_refinements": false
+    },
+    {
+      "extra_training": false,
+      "one_pass": false,
+      "stock_qwen": true,
+      "three_refinement_proof": true,
+      "three_refinements": false
+    },
+    {
+      "extra_training": false,
+      "one_pass": false,
+      "stock_qwen": true,
+      "three_refinement_proof": true,
+      "three_refinements": false
+    },
+    {
+      "extra_training": false,
+      "one_pass": true,
+      "stock_qwen": true,
+      "three_refinement_proof": true,
+      "three_refinements": true
+    },
+    {
+      "extra_training": false,
+      "one_pass": false,
+      "stock_qwen": true,
+      "three_refinement_proof": true,
+      "three_refinements": false
+    },
+    {
+      "extra_training": true,
+      "one_pass": true,
+      "stock_qwen": true,
+      "three_refinement_proof": true,
+      "three_refinements": true
+    },
+    {
+      "extra_training": false,
+      "one_pass": false,
+      "stock_qwen": true,
+      "three_refinement_proof": true,
+      "three_refinements": false
+    },
+    {
+      "extra_training": false,
+      "one_pass": false,
+      "stock_qwen": true,
+      "three_refinement_proof": true,
+      "three_refinements": false
+    },
+    {
+      "extra_training": false,
+      "one_pass": false,
+      "stock_qwen": true,
+      "three_refinement_proof": true,
+      "three_refinements": false
+    },
+    {
+      "extra_training": false,
+      "one_pass": false,
+      "stock_qwen": true,
+      "three_refinement_proof": true,
+      "three_refinements": false
+    },
+    {
+      "extra_training": false,
+      "one_pass": false,
+      "stock_qwen": false,
+      "three_refinement_proof": true,
+      "three_refinements": false
+    },
+    {
+      "extra_training": true,
+      "one_pass": true,
+      "stock_qwen": true,
+      "three_refinement_proof": true,
+      "three_refinements": true
+    },
+    {
+      "extra_training": false,
+      "one_pass": false,
+      "stock_qwen": true,
+      "three_refinement_proof": false,
+      "three_refinements": false
+    },
+    {
+      "extra_training": false,
+      "one_pass": false,
+      "stock_qwen": false,
+      "three_refinement_proof": true,
+      "three_refinements": false
+    },
+    {
+      "extra_training": false,
+      "one_pass": false,
+      "stock_qwen": true,
+      "three_refinement_proof": false,
+      "three_refinements": false
+    },
+    {
+      "extra_training": false,
+      "one_pass": true,
+      "stock_qwen": true,
+      "three_refinement_proof": true,
+      "three_refinements": true
+    },
+    {
+      "extra_training": false,
+      "one_pass": false,
+      "stock_qwen": false,
+      "three_refinement_proof": true,
+      "three_refinements": false
+    },
+    {
+      "extra_training": false,
+      "one_pass": false,
+      "stock_qwen": true,
+      "three_refinement_proof": false,
+      "three_refinements": false
+    },
+    {
+      "extra_training": false,
+      "one_pass": false,
+      "stock_qwen": false,
+      "three_refinement_proof": true,
+      "three_refinements": false
+    },
+    {
+      "extra_training": true,
+      "one_pass": false,
+      "stock_qwen": true,
+      "three_refinement_proof": true,
+      "three_refinements": false
+    },
+    {
+      "extra_training": false,
+      "one_pass": false,
+      "stock_qwen": false,
+      "three_refinement_proof": true,
+      "three_refinements": false
+    },
+    {
+      "extra_training": true,
+      "one_pass": true,
+      "stock_qwen": true,
+      "three_refinement_proof": true,
+      "three_refinements": false
+    },
+    {
+      "extra_training": false,
+      "one_pass": false,
+      "stock_qwen": false,
+      "three_refinement_proof": false,
+      "three_refinements": false
+    },
+    {
+      "extra_training": false,
+      "one_pass": false,
+      "stock_qwen": false,
+      "three_refinement_proof": true,
+      "three_refinements": false
+    },
+    {
+      "extra_training": false,
+      "one_pass": false,
+      "stock_qwen": true,
+      "three_refinement_proof": true,
+      "three_refinements": false
+    },
+    {
+      "extra_training": false,
+      "one_pass": false,
+      "stock_qwen": false,
+      "three_refinement_proof": true,
+      "three_refinements": false
+    },
+    {
+      "extra_training": false,
+      "one_pass": false,
+      "stock_qwen": false,
+      "three_refinement_proof": true,
+      "three_refinements": false
+    },
+    {
+      "extra_training": false,
+      "one_pass": false,
+      "stock_qwen": true,
+      "three_refinement_proof": true,
+      "three_refinements": false
+    },
+    {
+      "extra_training": false,
+      "one_pass": false,
+      "stock_qwen": true,
+      "three_refinement_proof": false,
+      "three_refinements": false
+    },
+    {
+      "extra_training": true,
+      "one_pass": true,
+      "stock_qwen": false,
+      "three_refinement_proof": true,
+      "three_refinements": true
+    },
+    {
+      "extra_training": false,
+      "one_pass": false,
+      "stock_qwen": true,
+      "three_refinement_proof": true,
+      "three_refinements": false
+    },
+    {
+      "extra_training": false,
+      "one_pass": false,
+      "stock_qwen": true,
+      "three_refinement_proof": true,
+      "three_refinements": false
+    },
+    {
+      "extra_training": false,
+      "one_pass": false,
+      "stock_qwen": true,
+      "three_refinement_proof": true,
+      "three_refinements": false
+    },
+    {
+      "extra_training": false,
+      "one_pass": false,
+      "stock_qwen": false,
+      "three_refinement_proof": true,
+      "three_refinements": false
+    },
+    {
+      "extra_training": true,
+      "one_pass": true,
+      "stock_qwen": true,
+      "three_refinement_proof": true,
+      "three_refinements": true
+    },
+    {
+      "extra_training": false,
+      "one_pass": false,
+      "stock_qwen": true,
+      "three_refinement_proof": true,
+      "three_refinements": false
+    },
+    {
+      "extra_training": false,
+      "one_pass": false,
+      "stock_qwen": true,
+      "three_refinement_proof": true,
+      "three_refinements": false
+    },
+    {
+      "extra_training": false,
+      "one_pass": false,
+      "stock_qwen": false,
+      "three_refinement_proof": true,
+      "three_refinements": false
+    },
+    {
+      "extra_training": true,
+      "one_pass": true,
+      "stock_qwen": true,
+      "three_refinement_proof": true,
+      "three_refinements": true
+    },
+    {
+      "extra_training": false,
+      "one_pass": false,
+      "stock_qwen": true,
+      "three_refinement_proof": true,
+      "three_refinements": false
+    },
+    {
+      "extra_training": false,
+      "one_pass": false,
+      "stock_qwen": true,
+      "three_refinement_proof": false,
+      "three_refinements": false
+    },
+    {
+      "extra_training": false,
+      "one_pass": false,
+      "stock_qwen": true,
+      "three_refinement_proof": true,
+      "three_refinements": false
+    },
+    {
+      "extra_training": false,
+      "one_pass": false,
+      "stock_qwen": false,
+      "three_refinement_proof": true,
+      "three_refinements": false
+    }
+  ],
+  "generated-linear": [
+    {
+      "extra_training": false,
+      "one_pass": true,
+      "stock_qwen": false,
+      "three_refinement_proof": true,
+      "three_refinements": true
+    },
+    {
+      "extra_training": false,
+      "one_pass": false,
+      "stock_qwen": true,
+      "three_refinement_proof": true,
+      "three_refinements": false
+    },
+    {
+      "extra_training": true,
+      "one_pass": true,
+      "stock_qwen": true,
+      "three_refinement_proof": true,
+      "three_refinements": true
+    },
+    {
+      "extra_training": true,
+      "one_pass": true,
+      "stock_qwen": false,
+      "three_refinement_proof": true,
+      "three_refinements": true
+    },
+    {
+      "extra_training": true,
+      "one_pass": true,
+      "stock_qwen": true,
+      "three_refinement_proof": true,
+      "three_refinements": true
+    },
+    {
+      "extra_training": false,
+      "one_pass": false,
+      "stock_qwen": true,
+      "three_refinement_proof": true,
+      "three_refinements": true
+    },
+    {
+      "extra_training": true,
+      "one_pass": true,
+      "stock_qwen": true,
+      "three_refinement_proof": true,
+      "three_refinements": true
+    },
+    {
+      "extra_training": true,
+      "one_pass": true,
+      "stock_qwen": false,
+      "three_refinement_proof": true,
+      "three_refinements": true
+    },
+    {
+      "extra_training": true,
+      "one_pass": true,
+      "stock_qwen": false,
+      "three_refinement_proof": true,
+      "three_refinements": true
+    },
+    {
+      "extra_training": false,
+      "one_pass": false,
+      "stock_qwen": false,
+      "three_refinement_proof": true,
+      "three_refinements": false
+    },
+    {
+      "extra_training": true,
+      "one_pass": true,
+      "stock_qwen": true,
+      "three_refinement_proof": true,
+      "three_refinements": true
+    },
+    {
+      "extra_training": false,
+      "one_pass": true,
+      "stock_qwen": false,
+      "three_refinement_proof": true,
+      "three_refinements": true
+    },
+    {
+      "extra_training": true,
+      "one_pass": true,
+      "stock_qwen": false,
+      "three_refinement_proof": true,
+      "three_refinements": true
+    },
+    {
+      "extra_training": false,
+      "one_pass": false,
+      "stock_qwen": true,
+      "three_refinement_proof": true,
+      "three_refinements": false
+    },
+    {
+      "extra_training": true,
+      "one_pass": true,
+      "stock_qwen": true,
+      "three_refinement_proof": true,
+      "three_refinements": true
+    },
+    {
+      "extra_training": true,
+      "one_pass": true,
+      "stock_qwen": true,
+      "three_refinement_proof": true,
+      "three_refinements": true
+    },
+    {
+      "extra_training": true,
+      "one_pass": true,
+      "stock_qwen": true,
+      "three_refinement_proof": true,
+      "three_refinements": true
+    },
+    {
+      "extra_training": false,
+      "one_pass": false,
+      "stock_qwen": true,
+      "three_refinement_proof": true,
+      "three_refinements": false
+    },
+    {
+      "extra_training": true,
+      "one_pass": true,
+      "stock_qwen": true,
+      "three_refinement_proof": true,
+      "three_refinements": true
+    },
+    {
+      "extra_training": true,
+      "one_pass": true,
+      "stock_qwen": true,
+      "three_refinement_proof": true,
+      "three_refinements": true
+    },
+    {
+      "extra_training": true,
+      "one_pass": true,
+      "stock_qwen": true,
+      "three_refinement_proof": true,
+      "three_refinements": true
+    },
+    {
+      "extra_training": false,
+      "one_pass": false,
+      "stock_qwen": true,
+      "three_refinement_proof": true,
+      "three_refinements": true
+    },
+    {
+      "extra_training": true,
+      "one_pass": true,
+      "stock_qwen": true,
+      "three_refinement_proof": true,
+      "three_refinements": true
+    },
+    {
+      "extra_training": true,
+      "one_pass": true,
+      "stock_qwen": true,
+      "three_refinement_proof": true,
+      "three_refinements": true
+    }
+  ]
+}

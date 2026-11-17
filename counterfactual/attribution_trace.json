@@ -1,0 +1,428 @@
+{
+  "attribution_sha256": "cd0c63b55c3f89c640096203eac2165b8d814b85809666f5bb3a98a6b42bd2b6",
+  "checkpoint_sha256": {
+    "config.json": "507a6701220524eb8b283425bf0856a9ae4f21f4052e563896ddd668994b1dc7",
+    "model.safetensors": "0e86d9677e519323849eac1bc272caae88567a481ff188c431f70be543d9995f",
+    "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+  },
+  "rows": {
+    "0-15": {
+      "example_a": [
+        2,
+        -1,
+        0,
+        1
+      ],
+      "example_b": null,
+      "no_example": null
+    },
+    "0-08": {
+      "example_a": null,
+      "example_b": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "no_example": null
+    },
+    "2-01": {
+      "example_a": [
+        2,
+        -1,
+        0,
+        1
+      ],
+      "example_b": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "no_example": null
+    },
+    "0-05": {
+      "example_a": null,
+      "example_b": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "no_example": null
+    },
+    "0-09": {
+      "example_a": [
+        2,
+        -1,
+        0,
+        1
+      ],
+      "example_b": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "no_example": null
+    },
+    "2-03": {
+      "example_a": [
+        2,
+        -1,
+        0,
+        1
+      ],
+      "example_b": null,
+      "no_example": null
+    },
+    "2-05": {
+      "example_a": [
+        2,
+        -1,
+        0,
+        1
+      ],
+      "example_b": [
+        2,
+        3,
+        0,
+        -3
+      ],
+      "no_example": null
+    },
+    "0-10": {
+      "example_a": [
+        2,
+        -1,
+        0,
+        1
+      ],
+      "example_b": [
+        2,
+        -1,
+        0,
+        -2
+      ],
+      "no_example": null
+    },
+    "1-08": {
+      "no_example": null,
+      "example_b": null,
+      "example_a": [
+        2,
+        -1,
+        0,
+        1
+      ]
+    },
+    "3-05": {
+      "no_example": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "example_b": null,
+      "example_a": [
+        2,
+        -1,
+        0,
+        1
+      ]
+    },
+    "2-10": {
+      "no_example": null,
+      "example_b": [
+        1,
+        3,
+        0,
+        -1
+      ],
+      "example_a": [
+        2,
+        -1,
+        0,
+        1
+      ]
+    },
+    "3-06": {
+      "no_example": null,
+      "example_b": null,
+      "example_a": [
+        2,
+        -1,
+        0,
+        1
+      ]
+    },
+    "2-08": {
+      "no_example": null,
+      "example_b": null,
+      "example_a": [
+        2,
+        -1,
+        0,
+        1
+      ]
+    },
+    "0-07": {
+      "no_example": null,
+      "example_b": null,
+      "example_a": [
+        2,
+        -1,
+        0,
+        1
+      ]
+    },
+    "3-14": {
+      "no_example": null,
+      "example_b": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "example_a": [
+        2,
+        -1,
+        0,
+        1
+      ]
+    },
+    "3-15": {
+      "no_example": null,
+      "example_b": null,
+      "example_a": null
+    },
+    "1-12": {
+      "example_a": [
+        2,
+        -1,
+        0,
+        1
+      ],
+      "example_b": [
+        -2,
+        1,
+        0,
+        -1
+      ],
+      "no_example": null
+    },
+    "3-13": {
+      "example_a": null,
+      "example_b": null,
+      "no_example": null
+    },
+    "2-12": {
+      "example_a": [
+        2,
+        -1,
+        0,
+        1
+      ],
+      "example_b": [
+        2,
+        -1,
+        0,
+        -2
+      ],
+      "no_example": null
+    },
+    "2-06": {
+      "example_a": [
+        2,
+        -1,
+        0,
+        1
+      ],
+      "example_b": [
+        2,
+        -1,
+        0,
+        -2
+      ],
+      "no_example": null
+    },
+    "0-02": {
+      "example_a": [
+        2,
+        -1,
+        0,
+        1
+      ],
+      "example_b": null,
+      "no_example": null
+    },
+    "3-01": {
+      "example_a": [
+        2,
+        -1,
+        0,
+        1
+      ],
+      "example_b": [
+        2,
+        1,
+        0,
+        -1
+      ],
+      "no_example": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "1-04": {
+      "example_a": [
+        2,
+        -1,
+        0,
+        1
+      ],
+      "example_b": null,
+      "no_example": null
+    },
+    "1-00": {
+      "example_a": [
+        2,
+        -1,
+        0,
+        1
+      ],
+      "example_b": null,
+      "no_example": null
+    },
+    "3-00": {
+      "no_example": null,
+      "example_b": null,
+      "example_a": [
+        2,
+        -1,
+        0,
+        1
+      ]
+    },
+    "1-05": {
+      "no_example": null,
+      "example_b": [
+        -2,
+        1,
+        0,
+        -1
+      ],
+      "example_a": [
+        2,
+        -1,
+        0,
+        1
+      ]
+    },
+    "1-14": {
+      "no_example": null,
+      "example_b": null,
+      "example_a": [
+        2,
+        -1,
+        0,
+        1
+      ]
+    },
+    "3-11": {
+      "no_example": null,
+      "example_b": [
+        2,
+        -1,
+        0,
+        -2
+      ],
+      "example_a": [
+        2,
+        -1,
+        0,
+        1
+      ]
+    },
+    "2-11": {
+      "no_example": null,
+      "example_b": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "example_a": [
+        2,
+        -1,
+        0,
+        1
+      ]
+    },
+    "0-04": {
+      "no_example": null,
+      "example_b": null,
+      "example_a": [
+        2,
+        -1,
+        0,
+        1
+      ]
+    },
+    "1-09": {
+      "no_example": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "example_b": [
+        -2,
+        1,
+        0,
+        -1
+      ],
+      "example_a": [
+        2,
+        -1,
+        0,
+        1
+      ]
+    },
+    "1-07": {
+      "no_example": null,
+      "example_b": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "example_a": [
+        2,
+        -1,
+        0,
+        1
+      ]
+    }
+  },
+  "costs": {
+    "example_a": {
+      "prompt_tokens": 7445,
+      "generated_tokens": 815,
+      "elapsed_ns": 10610891499
+    },
+    "example_b": {
+      "prompt_tokens": 7445,
+      "generated_tokens": 1280,
+      "elapsed_ns": 12125711792
+    },
+    "no_example": {
+      "prompt_tokens": 5493,
+      "generated_tokens": 1139,
+      "elapsed_ns": 9804693375
+    }
+  },
+  "mlx_peak_active_bytes": 1894183700
+}

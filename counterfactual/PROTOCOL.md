@@ -1,0 +1,26 @@
+# Can an exact executor flag correct answers from the wrong program?
+
+Specified before any model run on the generated benchmark. This is a fresh experiment on the frozen local stock Qwen checkpoint, motivated by the archived recurrent adapter's checker failures. It makes no architecture or retraining claim.
+
+## Task and split
+
+Use original generated questions from four families of signed count problems (library, contest, electrical storage, theatre). Every problem asks for a signed net change over four labelled sources. The exact program is a dot product of the four values with integer coefficients in [-3,3]. For each family generate 16 data points from a fixed standalone Python seed. The one shared structured-format demonstration and the warm-up question use distinct fixtures outside the evaluation set. The benchmark contains 32 ordinary questions with four distinct sampled values and 32 alias stress questions, with two numeric entries forced to coincide for alias stress. Group outcomes by the generated base item (all arms share problem semantics and labels). Stress frequencies are not an estimate of natural data. Benchmark grammar and fixture examples are public. Gold programs come from the generator and never enter model prompts or repair.
+
+## Model comparisons
+
+Use the same local Qwen3-1.7B 4-bit weights (hash checked), deterministic greedy decoding, thinking disabled for each arm. Score the following:
+
+1. **Worked answer**. Original numeric problem, explicit concise arithmetic and labelled final integer. At most 80 generated tokens.
+2. **Structured program**. Original numeric problem, labelled output of four bounded coefficients, executed with exact integers. Include one matched-format worked example. At most 40 generated tokens.
+3. **Value-masked program**. Same instruction, worked example and executor as structured program, with only the four case-specific numerals hidden during translation. Multiplicities in the prose remain visible. At most 40 generated tokens in one call.
+4. **Structured review**. Fresh pass that sees the prior structured proposal and is asked to check where it may have counted or signed terms incorrectly. Sees the same original problem and example. A valid second proposal replaces the first. Keep a valid first proposal on invalid review. This is a deliberate extra-call baseline (up to a further 40 generated tokens per item). Charge both calls, and give it no model-generated answer from another arm.
+
+Use fixed batch width at most eight, one model process and no downloads. Store parsed integers, output lengths and latency at batch level without publishing generative scratch text. Count output tokens including terminating tokens, from the generator's recorded count. For a missing parse, score neither answer nor program correct. Use the strict coefficient-vector format with a lenient single-bracket list fallback so benign formatting cannot dominate the result. A separate short symbolic control compares with a correct coefficient oracle and a source-dependent term-swap that leaves the numeric answer unchanged only on selected aliases. The check never executes generated code.
+
+## Audit controlled by gold specifications
+
+An execution-valid bounded program can be compared either with the ordinary answer or with a challenge answer calculated from an independent specification. Run a candidate on the original values, a second input sampled independently uniformly from 1 to 343 by coordinate, and a fixed powers-of-seven input (1,7,49,343). Compare with the gold answer for that input. Also use the four basis unit probes as a reference with four calls to the integer evaluator. In deployment this needs a trusted answer for the probe, so it is an audit for benchmark builders or formal specifications.
+
+Exhaustively verify injection on all 7^4 programs and quantify collisions in one-input controls using 32 random assignments drawn before evaluation. Report the fraction of programmes with unique signatures and the number of unordered colliding pairs. Compare compressed-probe outputs against the rank-four reference and the independent coefficient comparison on all candidates. Record executable but misgrounded programmes, ordinary-answer aliases and random-probe misses. Record the forced-alias mutation separately from actual model output. At minimum the powers-of-seven check must agree with exact program equivalence on every candidate and exhaustive domain. Anything else is a failure.
+
+Compare exact program grounding for value-masked against direct-structured and structured review, with paired 95% stratified bootstrap over base questions within each of the eight family/by-alias cells (5,000 draws, fixed seed). A practical win over direct structured requires a gain of at least 10 points, lower endpoint strictly above zero, and no more than 10% more realised total prompt plus output tokens. The native arm measures end-to-end answer accuracy only. Report both ordinary-answer and exact program results so accidental matches remain visible. Explicitly report any coverage events and the realised tokens for all arms. Extrapolation outside this small bounded homogeneous linear grammar would need new witnesses and tests.

@@ -1,5 +1,7 @@
 # Can a better router rescue recurrent Qwen on word problems?
 
+**Follow-up.** [One counterfactual separates 2,401 reasoning programs](counterfactual/REPORT.md). The follow-up proves and exhaustively checks when a single answer can certify a bounded program, then tests translation and review with fresh local Qwen inference.
+
 An answer-key oracle could solve **13 of 64 GSM8K problems** by choosing the correct answer from any of three archived Qwen3-1.7B adapter runs. The stock Qwen run solved **40 of 64**. Giving the original one-pass adapter a second try at three refinements rescued just **one** of its 54 misses, even with perfect routing and answer selection. This limits what inference-time routing can do with this fixed set of proposals. [Protocol](PROTOCOL.md) · [Results](results.json)
 
 ## Same questions, different routes

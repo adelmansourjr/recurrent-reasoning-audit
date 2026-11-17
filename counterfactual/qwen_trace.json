@@ -1,0 +1,977 @@
+{
+  "protocol_sha256": "9dc2180188179eb682a8d1a580e96fafd619d79edfc38bfdd4c0488ec50f9c24",
+  "checkpoint_sha256": {
+    "config.json": "507a6701220524eb8b283425bf0856a9ae4f21f4052e563896ddd668994b1dc7",
+    "model.safetensors": "0e86d9677e519323849eac1bc272caae88567a481ff188c431f70be543d9995f",
+    "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+  },
+  "software": {
+    "mlx": "0.32.3",
+    "mlx-lm": "0.31.3"
+  },
+  "mlx_peak_active_bytes": 2063422220,
+  "rows": [
+    {
+      "id": "2-15",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "1-02",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "0-08",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "0-05",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "1-00",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "1-04",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "3-09",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "1-15",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "2-05",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "1-01",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "0-04",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "2-13",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "1-06",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "2-01",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "0-03",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "3-04",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "2-06",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "2-09",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "0-14",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "1-14",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "1-13",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "3-06",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "1-12",
+      "worked": 2,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "2-08",
+      "worked": 1,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "2-10",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "3-00",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "1-08",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "1-10",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "2-12",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "3-03",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "2-04",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "3-13",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "3-14",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "0-13",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "3-02",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "3-12",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "3-11",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "2-11",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "0-06",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "3-15",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "3-07",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "3-01",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "1-11",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "2-00",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "0-10",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "0-11",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "0-15",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "0-09",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "0-00",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "2-07",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "3-08",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "3-10",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "3-05",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "0-07",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "1-07",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "1-05",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "1-09",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "2-03",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "1-03",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "2-02",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "2-14",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "0-01",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "0-02",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    },
+    {
+      "id": "0-12",
+      "worked": null,
+      "structured": null,
+      "masked": null,
+      "review": null
+    }
+  ],
+  "batches": [
+    {
+      "method": "worked",
+      "case_ids": [
+        "2-15",
+        "1-02",
+        "0-08",
+        "0-05",
+        "1-00",
+        "1-04",
+        "3-09",
+        "1-15"
+      ],
+      "prompt_tokens": 1153,
+      "generated_tokens": 640,
+      "elapsed_ns": 3184564000
+    },
+    {
+      "method": "structured",
+      "case_ids": [
+        "2-15",
+        "1-02",
+        "0-08",
+        "0-05",
+        "1-00",
+        "1-04",
+        "3-09",
+        "1-15"
+      ],
+      "prompt_tokens": 1833,
+      "generated_tokens": 320,
+      "elapsed_ns": 2782611125
+    },
+    {
+      "method": "masked",
+      "case_ids": [
+        "2-15",
+        "1-02",
+        "0-08",
+        "0-05",
+        "1-00",
+        "1-04",
+        "3-09",
+        "1-15"
+      ],
+      "prompt_tokens": 1746,
+      "generated_tokens": 320,
+      "elapsed_ns": 2705370125
+    },
+    {
+      "method": "review",
+      "case_ids": [
+        "2-15",
+        "1-02",
+        "0-08",
+        "0-05",
+        "1-00",
+        "1-04",
+        "3-09",
+        "1-15"
+      ],
+      "prompt_tokens": 2129,
+      "generated_tokens": 320,
+      "elapsed_ns": 3058068459
+    },
+    {
+      "method": "masked",
+      "case_ids": [
+        "2-05",
+        "1-01",
+        "0-04",
+        "2-13",
+        "1-06",
+        "2-01",
+        "0-03",
+        "3-04"
+      ],
+      "prompt_tokens": 1773,
+      "generated_tokens": 320,
+      "elapsed_ns": 2740412708
+    },
+    {
+      "method": "structured",
+      "case_ids": [
+        "2-05",
+        "1-01",
+        "0-04",
+        "2-13",
+        "1-06",
+        "2-01",
+        "0-03",
+        "3-04"
+      ],
+      "prompt_tokens": 1858,
+      "generated_tokens": 320,
+      "elapsed_ns": 2809365125
+    },
+    {
+      "method": "review",
+      "case_ids": [
+        "2-05",
+        "1-01",
+        "0-04",
+        "2-13",
+        "1-06",
+        "2-01",
+        "0-03",
+        "3-04"
+      ],
+      "prompt_tokens": 2154,
+      "generated_tokens": 320,
+      "elapsed_ns": 3083735625
+    },
+    {
+      "method": "worked",
+      "case_ids": [
+        "2-05",
+        "1-01",
+        "0-04",
+        "2-13",
+        "1-06",
+        "2-01",
+        "0-03",
+        "3-04"
+      ],
+      "prompt_tokens": 1178,
+      "generated_tokens": 640,
+      "elapsed_ns": 3164765167
+    },
+    {
+      "method": "worked",
+      "case_ids": [
+        "2-06",
+        "2-09",
+        "0-14",
+        "1-14",
+        "1-13",
+        "3-06",
+        "1-12",
+        "2-08"
+      ],
+      "prompt_tokens": 1133,
+      "generated_tokens": 640,
+      "elapsed_ns": 3166488416
+    },
+    {
+      "method": "structured",
+      "case_ids": [
+        "2-06",
+        "2-09",
+        "0-14",
+        "1-14",
+        "1-13",
+        "3-06",
+        "1-12",
+        "2-08"
+      ],
+      "prompt_tokens": 1813,
+      "generated_tokens": 320,
+      "elapsed_ns": 2774815792
+    },
+    {
+      "method": "masked",
+      "case_ids": [
+        "2-06",
+        "2-09",
+        "0-14",
+        "1-14",
+        "1-13",
+        "3-06",
+        "1-12",
+        "2-08"
+      ],
+      "prompt_tokens": 1726,
+      "generated_tokens": 320,
+      "elapsed_ns": 2722322708
+    },
+    {
+      "method": "review",
+      "case_ids": [
+        "2-06",
+        "2-09",
+        "0-14",
+        "1-14",
+        "1-13",
+        "3-06",
+        "1-12",
+        "2-08"
+      ],
+      "prompt_tokens": 2109,
+      "generated_tokens": 320,
+      "elapsed_ns": 3080583708
+    },
+    {
+      "method": "masked",
+      "case_ids": [
+        "2-10",
+        "3-00",
+        "1-08",
+        "1-10",
+        "2-12",
+        "3-03",
+        "2-04",
+        "3-13"
+      ],
+      "prompt_tokens": 1733,
+      "generated_tokens": 320,
+      "elapsed_ns": 2739792375
+    },
+    {
+      "method": "structured",
+      "case_ids": [
+        "2-10",
+        "3-00",
+        "1-08",
+        "1-10",
+        "2-12",
+        "3-03",
+        "2-04",
+        "3-13"
+      ],
+      "prompt_tokens": 1820,
+      "generated_tokens": 320,
+      "elapsed_ns": 2809549750
+    },
+    {
+      "method": "review",
+      "case_ids": [
+        "2-10",
+        "3-00",
+        "1-08",
+        "1-10",
+        "2-12",
+        "3-03",
+        "2-04",
+        "3-13"
+      ],
+      "prompt_tokens": 2116,
+      "generated_tokens": 320,
+      "elapsed_ns": 3077181500
+    },
+    {
+      "method": "worked",
+      "case_ids": [
+        "2-10",
+        "3-00",
+        "1-08",
+        "1-10",
+        "2-12",
+        "3-03",
+        "2-04",
+        "3-13"
+      ],
+      "prompt_tokens": 1140,
+      "generated_tokens": 640,
+      "elapsed_ns": 3195782250
+    },
+    {
+      "method": "worked",
+      "case_ids": [
+        "3-14",
+        "0-13",
+        "3-02",
+        "3-12",
+        "3-11",
+        "2-11",
+        "0-06",
+        "3-15"
+      ],
+      "prompt_tokens": 1183,
+      "generated_tokens": 640,
+      "elapsed_ns": 3305626334
+    },
+    {
+      "method": "structured",
+      "case_ids": [
+        "3-14",
+        "0-13",
+        "3-02",
+        "3-12",
+        "3-11",
+        "2-11",
+        "0-06",
+        "3-15"
+      ],
+      "prompt_tokens": 1863,
+      "generated_tokens": 320,
+      "elapsed_ns": 2923879917
+    },
+    {
+      "method": "masked",
+      "case_ids": [
+        "3-14",
+        "0-13",
+        "3-02",
+        "3-12",
+        "3-11",
+        "2-11",
+        "0-06",
+        "3-15"
+      ],
+      "prompt_tokens": 1777,
+      "generated_tokens": 320,
+      "elapsed_ns": 2840077333
+    },
+    {
+      "method": "review",
+      "case_ids": [
+        "3-14",
+        "0-13",
+        "3-02",
+        "3-12",
+        "3-11",
+        "2-11",
+        "0-06",
+        "3-15"
+      ],
+      "prompt_tokens": 2159,
+      "generated_tokens": 320,
+      "elapsed_ns": 3226775125
+    },
+    {
+      "method": "masked",
+      "case_ids": [
+        "3-07",
+        "3-01",
+        "1-11",
+        "2-00",
+        "0-10",
+        "0-11",
+        "0-15",
+        "0-09"
+      ],
+      "prompt_tokens": 1770,
+      "generated_tokens": 320,
+      "elapsed_ns": 3057462791
+    },
+    {
+      "method": "structured",
+      "case_ids": [
+        "3-07",
+        "3-01",
+        "1-11",
+        "2-00",
+        "0-10",
+        "0-11",
+        "0-15",
+        "0-09"
+      ],
+      "prompt_tokens": 1858,
+      "generated_tokens": 320,
+      "elapsed_ns": 3256275708
+    },
+    {
+      "method": "review",
+      "case_ids": [
+        "3-07",
+        "3-01",
+        "1-11",
+        "2-00",
+        "0-10",
+        "0-11",
+        "0-15",
+        "0-09"
+      ],
+      "prompt_tokens": 2154,
+      "generated_tokens": 320,
+      "elapsed_ns": 3491496375
+    },
+    {
+      "method": "worked",
+      "case_ids": [
+        "3-07",
+        "3-01",
+        "1-11",
+        "2-00",
+        "0-10",
+        "0-11",
+        "0-15",
+        "0-09"
+      ],
+      "prompt_tokens": 1178,
+      "generated_tokens": 640,
+      "elapsed_ns": 3640275375
+    },
+    {
+      "method": "worked",
+      "case_ids": [
+        "0-00",
+        "2-07",
+        "3-08",
+        "3-10",
+        "3-05",
+        "0-07",
+        "1-07",
+        "1-05"
+      ],
+      "prompt_tokens": 1181,
+      "generated_tokens": 640,
+      "elapsed_ns": 3556442459
+    },
+    {
+      "method": "structured",
+      "case_ids": [
+        "0-00",
+        "2-07",
+        "3-08",
+        "3-10",
+        "3-05",
+        "0-07",
+        "1-07",
+        "1-05"
+      ],
+      "prompt_tokens": 1861,
+      "generated_tokens": 320,
+      "elapsed_ns": 3116961417
+    },
+    {
+      "method": "masked",
+      "case_ids": [
+        "0-00",
+        "2-07",
+        "3-08",
+        "3-10",
+        "3-05",
+        "0-07",
+        "1-07",
+        "1-05"
+      ],
+      "prompt_tokens": 1775,
+      "generated_tokens": 320,
+      "elapsed_ns": 2987479875
+    },
+    {
+      "method": "review",
+      "case_ids": [
+        "0-00",
+        "2-07",
+        "3-08",
+        "3-10",
+        "3-05",
+        "0-07",
+        "1-07",
+        "1-05"
+      ],
+      "prompt_tokens": 2157,
+      "generated_tokens": 320,
+      "elapsed_ns": 3423099209
+    },
+    {
+      "method": "masked",
+      "case_ids": [
+        "1-09",
+        "2-03",
+        "1-03",
+        "2-02",
+        "2-14",
+        "0-01",
+        "0-02",
+        "0-12"
+      ],
+      "prompt_tokens": 1730,
+      "generated_tokens": 320,
+      "elapsed_ns": 3026970125
+    },
+    {
+      "method": "structured",
+      "case_ids": [
+        "1-09",
+        "2-03",
+        "1-03",
+        "2-02",
+        "2-14",
+        "0-01",
+        "0-02",
+        "0-12"
+      ],
+      "prompt_tokens": 1817,
+      "generated_tokens": 320,
+      "elapsed_ns": 3132939166
+    },
+    {
+      "method": "review",
+      "case_ids": [
+        "1-09",
+        "2-03",
+        "1-03",
+        "2-02",
+        "2-14",
+        "0-01",
+        "0-02",
+        "0-12"
+      ],
+      "prompt_tokens": 2113,
+      "generated_tokens": 320,
+      "elapsed_ns": 3426120375
+    },
+    {
+      "method": "worked",
+      "case_ids": [
+        "1-09",
+        "2-03",
+        "1-03",
+        "2-02",
+        "2-14",
+        "0-01",
+        "0-02",
+        "0-12"
+      ],
+      "prompt_tokens": 1137,
+      "generated_tokens": 640,
+      "elapsed_ns": 3545146583
+    }
+  ]
+}

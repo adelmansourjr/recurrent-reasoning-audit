@@ -1,0 +1,94 @@
+{
+  "cases": 64,
+  "protocol_sha256": "9dc2180188179eb682a8d1a580e96fafd619d79edfc38bfdd4c0488ec50f9c24",
+  "discrete_certificate": {
+    "programs": 2401,
+    "powers_of_seven": {
+      "unique_programs": 2401,
+      "colliding_pairs": 0
+    },
+    "one_random_probe": {
+      "replicates": 32,
+      "min_unique_programs": 98,
+      "mean_unique_programs": 1029.46875,
+      "max_unique_programs": 1929,
+      "mean_colliding_pairs": 1245.90625
+    }
+  },
+  "forced_alias_mutant": {
+    "count": 32,
+    "accepted_original": 32,
+    "accepted_random": 0,
+    "accepted_radix": 0
+  },
+  "matched_coefficient_oracle_and_four_probes": 0,
+  "model": {
+    "worked": {
+      "executable": 2
+    },
+    "structured": {
+      "grounded": 0,
+      "stress_grounded": 0,
+      "executable": 0,
+      "copied_shared_example": 0,
+      "ordinary_grounded": 0
+    },
+    "masked": {
+      "grounded": 0,
+      "stress_grounded": 0,
+      "executable": 0,
+      "copied_shared_example": 0,
+      "ordinary_grounded": 0
+    },
+    "review": {
+      "grounded": 0,
+      "stress_grounded": 0,
+      "executable": 0,
+      "copied_shared_example": 0,
+      "ordinary_grounded": 0
+    }
+  },
+  "model_cost": {
+    "worked": {
+      "prompt_tokens": 9283,
+      "generated_tokens": 5120,
+      "elapsed_ns": 26759090584
+    },
+    "structured": {
+      "prompt_tokens": 14723,
+      "generated_tokens": 2560,
+      "elapsed_ns": 23606398000
+    },
+    "masked": {
+      "prompt_tokens": 14030,
+      "generated_tokens": 2560,
+      "elapsed_ns": 22819888040
+    },
+    "review": {
+      "prompt_tokens": 31814,
+      "generated_tokens": 5120,
+      "elapsed_ns": 49473458376
+    }
+  },
+  "comparisons": {
+    "structured": {
+      "gain": 0.0,
+      "paired_95_interval": [
+        0.0,
+        0.0
+      ],
+      "masked_to_baseline_tokens": 0.959902794653706,
+      "practical_gate": false
+    },
+    "review": {
+      "gain": 0.0,
+      "paired_95_interval": [
+        0.0,
+        0.0
+      ],
+      "masked_to_baseline_tokens": 0.4491796176964315,
+      "practical_gate": false
+    }
+  },
+  "mlx_peak_active_bytes": 2063422220
+}

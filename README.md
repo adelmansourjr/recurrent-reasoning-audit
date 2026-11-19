@@ -39,3 +39,5 @@ The public replay uses a compact table of booleans without question text or gene
 python3 audit.py --table case_table.json --verify results.json
 python3 audit.py --archives /path/to/loop-transformer/results --table case_table.json --verify results.json
 ```
+
+[Training and typed-program source](training/README.md) contains the original recurrent model, LoRA pipeline and exact arithmetic interpreter.

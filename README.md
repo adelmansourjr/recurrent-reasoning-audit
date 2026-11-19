@@ -1,4 +1,16 @@
-# Can a better router rescue recurrent Qwen on word problems?
+# Demonstration selection and reliable Qwen reasoning
+
+I study how local language models use demonstrations, translate questions into programs and respond to verification. The latest study follows Mengyue Yang and colleagues’ [FEEDER paper](https://proceedings.mlr.press/v267/jin25i.html), with frozen cases, eight context conditions, option-order controls and independent replay.
+
+On **32 fresh synthetic four-choice program questions**, averaging four answer orders improved exact recognition with the same lexical-retrieved demonstrations from **17/32 to 27/32**. This uses **four scoring calls instead of one**. The model-conditioned preselected pool scored **26/32 versus 27/32** for full-pool retrieval, so its improvement gate failed. No better selector or general reasoning breakthrough is claimed.
+
+[Full report and limitations](demo-selection/REPORT.md) · [Frozen protocol](demo-selection/FOLLOWUP_PROTOCOL.md) · [Results](demo-selection/followup_results.json) · [Independent auditor](demo-selection/followup_audit.py)
+
+![Fresh confirmation and paired comparisons](demo-selection/results.svg)
+
+The earlier all-A readout, the corrected follow-up, failed selection gates and fragile coverage witnesses are all retained. Runs used one installed Qwen3-1.7B four-bit model at a time, with **1.51 GiB maximum observed MLX allocation** across the recorded phases and diagnostic. No weights or datasets were downloaded. The repository includes synthetic questions, raw label scores and costs, rather than model weights.
+
+## Earlier recurrent-adapter audit
 
 **Follow-up.** [One counterfactual separates 2,401 reasoning programs](counterfactual/REPORT.md). The follow-up proves and exhaustively checks when a single answer can certify a bounded program, then tests translation and review with fresh local Qwen inference.
 

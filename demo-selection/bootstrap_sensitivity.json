@@ -1,0 +1,613 @@
+{
+  "scope": "Supplementary sensitivity audit. Registered Monte Carlo intervals remain the primary reported analysis.",
+  "source_sha256": "c54ace201ccb2b68a5851c55c9f999b800e2e2ebc03c93803b3787e6da0084cc",
+  "input_sha256": {
+    "followup_manifest.json": "3427b00373e502cc0ac6ce64706d24654ab6237effb0a6dfd414fb65064ae52b",
+    "followup_test_trace.json": "0a5b58b61e9adaca5a613e8347c7bab94d1edcc012e45c205b9856e1f4cbe8e0",
+    "followup_results.json": "f97f7ef726d67a16ca048a69afc76684c14f383903dcefbaa650177abef31ff6"
+  },
+  "resampling_units": "32 independent semantic groups; rotations are repeated measurements.",
+  "registered_monte_carlo_draws": 20000,
+  "finite_accuracy_grid_step": 0.03125,
+  "model_core_minus_baselines": {
+    "zero": {
+      "groups": 32,
+      "paired_difference_counts": {
+        "-1": 2,
+        "0": 23,
+        "1": 7
+      },
+      "mean_difference": 0.15625,
+      "exact_95_interval": [
+        -0.03125,
+        0.34375
+      ],
+      "exact_7_comparison_bonferroni_interval": [
+        -0.09375,
+        0.40625
+      ],
+      "quantile_details_95": [
+        {
+          "value": -0.03125,
+          "sum": -1,
+          "level_fraction": [
+            1,
+            40
+          ],
+          "cdf_immediately_before": 0.010485665492916478,
+          "cdf_at_value": 0.025632120065413724
+        },
+        {
+          "value": 0.34375,
+          "sum": 11,
+          "level_fraction": [
+            39,
+            40
+          ],
+          "cdf_immediately_before": 0.9717697459987015,
+          "cdf_at_value": 0.9876820180651465
+        }
+      ],
+      "quantile_details_7_comparison": [
+        {
+          "value": -0.09375,
+          "sum": -3,
+          "level_fraction": [
+            1,
+            280
+          ],
+          "cdf_immediately_before": 0.0012375628312765311,
+          "cdf_at_value": 0.0038188063541880466
+        },
+        {
+          "value": 0.40625,
+          "sum": 13,
+          "level_fraction": [
+            279,
+            280
+          ],
+          "cdf_immediately_before": 0.995136851619305,
+          "cdf_at_value": 0.9982654064284124
+        }
+      ],
+      "integer_probability_denominator": "1461501637330902918203684832716283019655932542976",
+      "integration": "Integer polynomial convolution; no Monte Carlo sampling.",
+      "registered_mc_95_interval": [
+        -0.03125,
+        0.34375
+      ],
+      "registered_mc_simultaneous_interval": [
+        -0.09375,
+        0.40625
+      ],
+      "difference_exact_minus_registered_95_endpoints": [
+        0.0,
+        0.0
+      ]
+    },
+    "random_11": {
+      "groups": 32,
+      "paired_difference_counts": {
+        "-1": 2,
+        "0": 27,
+        "1": 3
+      },
+      "mean_difference": 0.03125,
+      "exact_95_interval": [
+        -0.09375,
+        0.15625
+      ],
+      "exact_7_comparison_bonferroni_interval": [
+        -0.15625,
+        0.21875
+      ],
+      "quantile_details_95": [
+        {
+          "value": -0.09375,
+          "sum": -3,
+          "level_fraction": [
+            1,
+            40
+          ],
+          "cdf_immediately_before": 0.020173237030433604,
+          "cdf_at_value": 0.05478724666128597
+        },
+        {
+          "value": 0.15625,
+          "sum": 5,
+          "level_fraction": [
+            39,
+            40
+          ],
+          "cdf_immediately_before": 0.9421266065029892,
+          "cdf_at_value": 0.9772776204807901
+        }
+      ],
+      "quantile_details_7_comparison": [
+        {
+          "value": -0.15625,
+          "sum": -5,
+          "level_fraction": [
+            1,
+            280
+          ],
+          "cdf_immediately_before": 0.0017128135280953776,
+          "cdf_at_value": 0.006341753640398383
+        },
+        {
+          "value": 0.21875,
+          "sum": 7,
+          "level_fraction": [
+            279,
+            280
+          ],
+          "cdf_immediately_before": 0.9922309286993343,
+          "cdf_at_value": 0.9976770338377667
+        }
+      ],
+      "integer_probability_denominator": "1461501637330902918203684832716283019655932542976",
+      "integration": "Integer polynomial convolution; no Monte Carlo sampling.",
+      "registered_mc_95_interval": [
+        -0.09375,
+        0.15625
+      ],
+      "registered_mc_simultaneous_interval": [
+        -0.15625,
+        0.21875
+      ],
+      "difference_exact_minus_registered_95_endpoints": [
+        0.0,
+        0.0
+      ]
+    },
+    "random_29": {
+      "groups": 32,
+      "paired_difference_counts": {
+        "-1": 2,
+        "0": 26,
+        "1": 4
+      },
+      "mean_difference": 0.0625,
+      "exact_95_interval": [
+        -0.09375,
+        0.21875
+      ],
+      "exact_7_comparison_bonferroni_interval": [
+        -0.125,
+        0.28125
+      ],
+      "quantile_details_95": [
+        {
+          "value": -0.09375,
+          "sum": -3,
+          "level_fraction": [
+            1,
+            40
+          ],
+          "cdf_immediately_before": 0.010307925777653859,
+          "cdf_at_value": 0.029039595035414395
+        },
+        {
+          "value": 0.21875,
+          "sum": 7,
+          "level_fraction": [
+            39,
+            40
+          ],
+          "cdf_immediately_before": 0.9671701184668546,
+          "cdf_at_value": 0.9871513583936773
+        }
+      ],
+      "quantile_details_7_comparison": [
+        {
+          "value": -0.125,
+          "sum": -4,
+          "level_fraction": [
+            1,
+            280
+          ],
+          "cdf_immediately_before": 0.0031639237882653084,
+          "cdf_at_value": 0.010307925777653859
+        },
+        {
+          "value": 0.28125,
+          "sum": 9,
+          "level_fraction": [
+            279,
+            280
+          ],
+          "cdf_immediately_before": 0.9955418097803332,
+          "cdf_at_value": 0.998626079344453
+        }
+      ],
+      "integer_probability_denominator": "1461501637330902918203684832716283019655932542976",
+      "integration": "Integer polynomial convolution; no Monte Carlo sampling.",
+      "registered_mc_95_interval": [
+        -0.09375,
+        0.21875
+      ],
+      "registered_mc_simultaneous_interval": [
+        -0.125,
+        0.28125
+      ],
+      "difference_exact_minus_registered_95_endpoints": [
+        0.0,
+        0.0
+      ]
+    },
+    "random_47": {
+      "groups": 32,
+      "paired_difference_counts": {
+        "-1": 1,
+        "0": 29,
+        "1": 2
+      },
+      "mean_difference": 0.03125,
+      "exact_95_interval": [
+        -0.0625,
+        0.125
+      ],
+      "exact_7_comparison_bonferroni_interval": [
+        -0.125,
+        0.1875
+      ],
+      "quantile_details_95": [
+        {
+          "value": -0.0625,
+          "sum": -2,
+          "level_fraction": [
+            1,
+            40
+          ],
+          "cdf_immediately_before": 0.017392996613640622,
+          "cdf_at_value": 0.06443536527087045
+        },
+        {
+          "value": 0.125,
+          "sum": 4,
+          "level_fraction": [
+            39,
+            40
+          ],
+          "cdf_immediately_before": 0.9265062012918093,
+          "cdf_at_value": 0.9756151293574967
+        }
+      ],
+      "quantile_details_7_comparison": [
+        {
+          "value": -0.125,
+          "sum": -4,
+          "level_fraction": [
+            1,
+            280
+          ],
+          "cdf_immediately_before": 0.0006422991449225003,
+          "cdf_at_value": 0.003711607149027964
+        },
+        {
+          "value": 0.1875,
+          "sum": 6,
+          "level_fraction": [
+            279,
+            280
+          ],
+          "cdf_immediately_before": 0.9932240227618354,
+          "cdf_at_value": 0.9984032445526086
+        }
+      ],
+      "integer_probability_denominator": "1461501637330902918203684832716283019655932542976",
+      "integration": "Integer polynomial convolution; no Monte Carlo sampling.",
+      "registered_mc_95_interval": [
+        -0.0625,
+        0.125
+      ],
+      "registered_mc_simultaneous_interval": [
+        -0.125,
+        0.1875
+      ],
+      "difference_exact_minus_registered_95_endpoints": [
+        0.0,
+        0.0
+      ]
+    },
+    "lexical": {
+      "groups": 32,
+      "paired_difference_counts": {
+        "-1": 2,
+        "0": 29,
+        "1": 1
+      },
+      "mean_difference": -0.03125,
+      "exact_95_interval": [
+        -0.125,
+        0.0625
+      ],
+      "exact_7_comparison_bonferroni_interval": [
+        -0.1875,
+        0.125
+      ],
+      "quantile_details_95": [
+        {
+          "value": -0.125,
+          "sum": -4,
+          "level_fraction": [
+            1,
+            40
+          ],
+          "cdf_immediately_before": 0.024384870642503265,
+          "cdf_at_value": 0.07349379870819069
+        },
+        {
+          "value": 0.0625,
+          "sum": 2,
+          "level_fraction": [
+            39,
+            40
+          ],
+          "cdf_immediately_before": 0.9355646347291295,
+          "cdf_at_value": 0.9826070033863594
+        }
+      ],
+      "quantile_details_7_comparison": [
+        {
+          "value": -0.1875,
+          "sum": -6,
+          "level_fraction": [
+            1,
+            280
+          ],
+          "cdf_immediately_before": 0.0015967554473913681,
+          "cdf_at_value": 0.006775977238164545
+        },
+        {
+          "value": 0.125,
+          "sum": 4,
+          "level_fraction": [
+            279,
+            280
+          ],
+          "cdf_immediately_before": 0.996288392850972,
+          "cdf_at_value": 0.9993577008550775
+        }
+      ],
+      "integer_probability_denominator": "1461501637330902918203684832716283019655932542976",
+      "integration": "Integer polynomial convolution; no Monte Carlo sampling.",
+      "registered_mc_95_interval": [
+        -0.15625,
+        0.0625
+      ],
+      "registered_mc_simultaneous_interval": [
+        -0.1875,
+        0.125
+      ],
+      "difference_exact_minus_registered_95_endpoints": [
+        0.03125,
+        0.0
+      ]
+    },
+    "mmr": {
+      "groups": 32,
+      "paired_difference_counts": {
+        "-1": 0,
+        "0": 32,
+        "1": 0
+      },
+      "mean_difference": 0.0,
+      "exact_95_interval": [
+        0.0,
+        0.0
+      ],
+      "exact_7_comparison_bonferroni_interval": [
+        0.0,
+        0.0
+      ],
+      "quantile_details_95": [
+        {
+          "value": 0.0,
+          "sum": 0,
+          "level_fraction": [
+            1,
+            40
+          ],
+          "cdf_immediately_before": 0.0,
+          "cdf_at_value": 1.0
+        },
+        {
+          "value": 0.0,
+          "sum": 0,
+          "level_fraction": [
+            39,
+            40
+          ],
+          "cdf_immediately_before": 0.0,
+          "cdf_at_value": 1.0
+        }
+      ],
+      "quantile_details_7_comparison": [
+        {
+          "value": 0.0,
+          "sum": 0,
+          "level_fraction": [
+            1,
+            280
+          ],
+          "cdf_immediately_before": 0.0,
+          "cdf_at_value": 1.0
+        },
+        {
+          "value": 0.0,
+          "sum": 0,
+          "level_fraction": [
+            279,
+            280
+          ],
+          "cdf_immediately_before": 0.0,
+          "cdf_at_value": 1.0
+        }
+      ],
+      "integer_probability_denominator": "1461501637330902918203684832716283019655932542976",
+      "integration": "Integer polynomial convolution; no Monte Carlo sampling.",
+      "registered_mc_95_interval": [
+        0.0,
+        0.0
+      ],
+      "registered_mc_simultaneous_interval": [
+        0.0,
+        0.0
+      ],
+      "difference_exact_minus_registered_95_endpoints": [
+        0.0,
+        0.0
+      ]
+    },
+    "diverse_core": {
+      "groups": 32,
+      "paired_difference_counts": {
+        "-1": 0,
+        "0": 30,
+        "1": 2
+      },
+      "mean_difference": 0.0625,
+      "exact_95_interval": [
+        0.0,
+        0.15625
+      ],
+      "exact_7_comparison_bonferroni_interval": [
+        0.0,
+        0.1875
+      ],
+      "quantile_details_95": [
+        {
+          "value": 0.0,
+          "sum": 0,
+          "level_fraction": [
+            1,
+            40
+          ],
+          "cdf_immediately_before": 0.0,
+          "cdf_at_value": 0.12678878637700036
+        },
+        {
+          "value": 0.15625,
+          "sum": 5,
+          "level_fraction": [
+            39,
+            40
+          ],
+          "cdf_immediately_before": 0.9531636595217913,
+          "cdf_at_value": 0.9867863342812379
+        }
+      ],
+      "quantile_details_7_comparison": [
+        {
+          "value": 0.0,
+          "sum": 0,
+          "level_fraction": [
+            1,
+            280
+          ],
+          "cdf_immediately_before": 0.0,
+          "cdf_at_value": 0.12678878637700036
+        },
+        {
+          "value": 0.1875,
+          "sum": 6,
+          "level_fraction": [
+            279,
+            280
+          ],
+          "cdf_immediately_before": 0.9867863342812379,
+          "cdf_at_value": 0.996873136709072
+        }
+      ],
+      "integer_probability_denominator": "1461501637330902918203684832716283019655932542976",
+      "integration": "Integer polynomial convolution; no Monte Carlo sampling.",
+      "registered_mc_95_interval": [
+        0.0,
+        0.15625
+      ],
+      "registered_mc_simultaneous_interval": [
+        0.0,
+        0.1875
+      ],
+      "difference_exact_minus_registered_95_endpoints": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "secondary_lexical_pooling_minus_fixed": {
+    "groups": 32,
+    "paired_difference_counts": {
+      "-1": 2,
+      "0": 18,
+      "1": 12
+    },
+    "mean_difference": 0.3125,
+    "exact_95_interval": [
+      0.125,
+      0.5
+    ],
+    "exact_7_comparison_bonferroni_interval": [
+      0.03125,
+      0.59375
+    ],
+    "quantile_details_95": [
+      {
+        "value": 0.125,
+        "sum": 4,
+        "level_fraction": [
+          1,
+          40
+        ],
+        "cdf_immediately_before": 0.0247220522380606,
+        "cdf_at_value": 0.04799837599107106
+      },
+      {
+        "value": 0.5,
+        "sum": 16,
+        "level_fraction": [
+          39,
+          40
+        ],
+        "cdf_immediately_before": 0.9538855177688954,
+        "cdf_at_value": 0.9770664739304454
+      }
+    ],
+    "quantile_details_7_comparison": [
+      {
+        "value": 0.03125,
+        "sum": 1,
+        "level_fraction": [
+          1,
+          280
+        ],
+        "cdf_immediately_before": 0.002093101823375875,
+        "cdf_at_value": 0.0051693018626182375
+      },
+      {
+        "value": 0.59375,
+        "sum": 19,
+        "level_fraction": [
+          279,
+          280
+        ],
+        "cdf_immediately_before": 0.9957334088893516,
+        "cdf_at_value": 0.9984202229486878
+      }
+    ],
+    "integer_probability_denominator": "1461501637330902918203684832716283019655932542976",
+    "integration": "Integer polynomial convolution; no Monte Carlo sampling.",
+    "registered_mc_95_interval": [
+      0.09375,
+      0.5
+    ]
+  },
+  "claim_verdict": {
+    "registered_primary_gate_passed": false,
+    "exact_bootstrap_primary_gate_passed": false,
+    "secondary_interval_positive_under_both": true,
+    "secondary_cost": "Four scored option orders versus one; not a compute-matched selection improvement."
+  },
+  "interpretation": "On this discrete 1/32 accuracy grid, Monte Carlo percentile estimates can cross a neighboring CDF step. The selection-improvement gate still fails; the secondary pooling contrast remains positive under both calculations. Neither observation establishes a general reasoning breakthrough."
+}

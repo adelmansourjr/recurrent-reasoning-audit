@@ -1,0 +1,486 @@
+{
+  "freeze": {
+    "scope": "Exploratory training-pool diagnostic; no confirmation efficacy claim",
+    "source_sha256": "2b067c8c6fcec6d8922f0e445d2a1c3a0a0c68bc09755bbcbd060452de19fde1",
+    "protocol_sha256": "20e724ba9d13411d29e5e2c93c127a7a9480acf14ff0796c1ba7396bdd7dc925",
+    "initial_freeze_sha256": "ff696a3c1bd434cd2715be6165c9f9101662c17378d3f47b58d82faa212c9dcf",
+    "followup_freeze_sha256": "5f6aa8bb1cb5f9e94b8aac823491f5944b59b2577ad68ff0a85ec6d64f92112b",
+    "preselect_trace_sha256": "551a38ae9026aa2831fd4312580a9d7cc154fe6a2a035f2da54dc38e5c6ec938",
+    "pool_manifest_sha256": "bc258dafd811ce7011ee9ea496615c2586f08adda890e2c80180fc16d528b4e5",
+    "initial_freeze": {
+      "protocol_sha256": "3ebb4c36f8af00af0737a943458cd2853bf0502320f9c9af150e421d40c6037b",
+      "source_sha256": "e0409b8f32d4824995ccbe5deb9aaa841034327eed63555cd57c5d9a2e9a08b8",
+      "manifest_sha256": "bc258dafd811ce7011ee9ea496615c2586f08adda890e2c80180fc16d528b4e5",
+      "test_generated_before_model_run": true,
+      "seed": 991763
+    },
+    "followup_freeze": {
+      "source_sha256": "d20923ec0f1848e3cc356bffedd8b23e6527b47272a365fffa0dc9e3f1ec223c",
+      "protocol_sha256": "7f8daa415fc14fa4642fb80de8f248cbc32224c498874a4e9fea6a01f38fc74d",
+      "manifest_sha256": "3427b00373e502cc0ac6ce64706d24654ab6237effb0a6dfd414fb65064ae52b",
+      "initial_freeze_sha256": "ff696a3c1bd434cd2715be6165c9f9101662c17378d3f47b58d82faa212c9dcf",
+      "historical_generator_sha256": "94783caff5cfb75dc7db4ee83b23895c63f4ee0279fb3169ea477f590c53fc1a",
+      "seed": 7239107
+    },
+    "before_zero_shot_or_witness_inference": true,
+    "max_witnesses": 12,
+    "zero_shot_rotations": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "edge_followup_rotations": [
+      1,
+      2
+    ]
+  },
+  "scope": "Exploratory selected training-pool witnesses, not a population test or refutation of FEEDER",
+  "raw_nontransitive_triples": 192,
+  "eligible_baseline_conditioned_triples": 20,
+  "selected_triples": 12,
+  "rotated_configurations": 24,
+  "nontransitive_pattern_retained": 2,
+  "strict_surviving_configurations": 1,
+  "triples_strictly_surviving_both_rotations": 0,
+  "trials": [
+    {
+      "triple": [
+        0,
+        2,
+        5
+      ],
+      "rotation": 1,
+      "a_to_b_correct": true,
+      "b_to_c_correct": true,
+      "a_to_c_correct": true,
+      "zero_shot_b_correct": false,
+      "zero_shot_c_correct": false,
+      "nontransitive_pattern_retained": false,
+      "both_zero_shot_controls_wrong": true,
+      "strict_survival": false
+    },
+    {
+      "triple": [
+        0,
+        2,
+        5
+      ],
+      "rotation": 2,
+      "a_to_b_correct": true,
+      "b_to_c_correct": true,
+      "a_to_c_correct": true,
+      "zero_shot_b_correct": true,
+      "zero_shot_c_correct": true,
+      "nontransitive_pattern_retained": false,
+      "both_zero_shot_controls_wrong": false,
+      "strict_survival": false
+    },
+    {
+      "triple": [
+        1,
+        2,
+        5
+      ],
+      "rotation": 1,
+      "a_to_b_correct": true,
+      "b_to_c_correct": true,
+      "a_to_c_correct": true,
+      "zero_shot_b_correct": false,
+      "zero_shot_c_correct": false,
+      "nontransitive_pattern_retained": false,
+      "both_zero_shot_controls_wrong": true,
+      "strict_survival": false
+    },
+    {
+      "triple": [
+        1,
+        2,
+        5
+      ],
+      "rotation": 2,
+      "a_to_b_correct": true,
+      "b_to_c_correct": true,
+      "a_to_c_correct": true,
+      "zero_shot_b_correct": true,
+      "zero_shot_c_correct": true,
+      "nontransitive_pattern_retained": false,
+      "both_zero_shot_controls_wrong": false,
+      "strict_survival": false
+    },
+    {
+      "triple": [
+        3,
+        2,
+        5
+      ],
+      "rotation": 1,
+      "a_to_b_correct": true,
+      "b_to_c_correct": true,
+      "a_to_c_correct": false,
+      "zero_shot_b_correct": false,
+      "zero_shot_c_correct": false,
+      "nontransitive_pattern_retained": true,
+      "both_zero_shot_controls_wrong": true,
+      "strict_survival": true
+    },
+    {
+      "triple": [
+        3,
+        2,
+        5
+      ],
+      "rotation": 2,
+      "a_to_b_correct": true,
+      "b_to_c_correct": true,
+      "a_to_c_correct": true,
+      "zero_shot_b_correct": true,
+      "zero_shot_c_correct": true,
+      "nontransitive_pattern_retained": false,
+      "both_zero_shot_controls_wrong": false,
+      "strict_survival": false
+    },
+    {
+      "triple": [
+        4,
+        2,
+        5
+      ],
+      "rotation": 1,
+      "a_to_b_correct": true,
+      "b_to_c_correct": true,
+      "a_to_c_correct": true,
+      "zero_shot_b_correct": false,
+      "zero_shot_c_correct": false,
+      "nontransitive_pattern_retained": false,
+      "both_zero_shot_controls_wrong": true,
+      "strict_survival": false
+    },
+    {
+      "triple": [
+        4,
+        2,
+        5
+      ],
+      "rotation": 2,
+      "a_to_b_correct": true,
+      "b_to_c_correct": true,
+      "a_to_c_correct": true,
+      "zero_shot_b_correct": true,
+      "zero_shot_c_correct": true,
+      "nontransitive_pattern_retained": false,
+      "both_zero_shot_controls_wrong": false,
+      "strict_survival": false
+    },
+    {
+      "triple": [
+        6,
+        2,
+        0
+      ],
+      "rotation": 1,
+      "a_to_b_correct": true,
+      "b_to_c_correct": true,
+      "a_to_c_correct": true,
+      "zero_shot_b_correct": false,
+      "zero_shot_c_correct": true,
+      "nontransitive_pattern_retained": false,
+      "both_zero_shot_controls_wrong": false,
+      "strict_survival": false
+    },
+    {
+      "triple": [
+        6,
+        2,
+        0
+      ],
+      "rotation": 2,
+      "a_to_b_correct": true,
+      "b_to_c_correct": false,
+      "a_to_c_correct": true,
+      "zero_shot_b_correct": true,
+      "zero_shot_c_correct": false,
+      "nontransitive_pattern_retained": false,
+      "both_zero_shot_controls_wrong": false,
+      "strict_survival": false
+    },
+    {
+      "triple": [
+        6,
+        2,
+        5
+      ],
+      "rotation": 1,
+      "a_to_b_correct": true,
+      "b_to_c_correct": true,
+      "a_to_c_correct": true,
+      "zero_shot_b_correct": false,
+      "zero_shot_c_correct": false,
+      "nontransitive_pattern_retained": false,
+      "both_zero_shot_controls_wrong": true,
+      "strict_survival": false
+    },
+    {
+      "triple": [
+        6,
+        2,
+        5
+      ],
+      "rotation": 2,
+      "a_to_b_correct": true,
+      "b_to_c_correct": true,
+      "a_to_c_correct": true,
+      "zero_shot_b_correct": true,
+      "zero_shot_c_correct": true,
+      "nontransitive_pattern_retained": false,
+      "both_zero_shot_controls_wrong": false,
+      "strict_survival": false
+    },
+    {
+      "triple": [
+        6,
+        3,
+        0
+      ],
+      "rotation": 1,
+      "a_to_b_correct": true,
+      "b_to_c_correct": false,
+      "a_to_c_correct": true,
+      "zero_shot_b_correct": true,
+      "zero_shot_c_correct": true,
+      "nontransitive_pattern_retained": false,
+      "both_zero_shot_controls_wrong": false,
+      "strict_survival": false
+    },
+    {
+      "triple": [
+        6,
+        3,
+        0
+      ],
+      "rotation": 2,
+      "a_to_b_correct": true,
+      "b_to_c_correct": false,
+      "a_to_c_correct": true,
+      "zero_shot_b_correct": true,
+      "zero_shot_c_correct": false,
+      "nontransitive_pattern_retained": false,
+      "both_zero_shot_controls_wrong": false,
+      "strict_survival": false
+    },
+    {
+      "triple": [
+        7,
+        2,
+        0
+      ],
+      "rotation": 1,
+      "a_to_b_correct": true,
+      "b_to_c_correct": true,
+      "a_to_c_correct": true,
+      "zero_shot_b_correct": false,
+      "zero_shot_c_correct": true,
+      "nontransitive_pattern_retained": false,
+      "both_zero_shot_controls_wrong": false,
+      "strict_survival": false
+    },
+    {
+      "triple": [
+        7,
+        2,
+        0
+      ],
+      "rotation": 2,
+      "a_to_b_correct": true,
+      "b_to_c_correct": false,
+      "a_to_c_correct": false,
+      "zero_shot_b_correct": true,
+      "zero_shot_c_correct": false,
+      "nontransitive_pattern_retained": false,
+      "both_zero_shot_controls_wrong": false,
+      "strict_survival": false
+    },
+    {
+      "triple": [
+        7,
+        2,
+        5
+      ],
+      "rotation": 1,
+      "a_to_b_correct": true,
+      "b_to_c_correct": true,
+      "a_to_c_correct": true,
+      "zero_shot_b_correct": false,
+      "zero_shot_c_correct": false,
+      "nontransitive_pattern_retained": false,
+      "both_zero_shot_controls_wrong": true,
+      "strict_survival": false
+    },
+    {
+      "triple": [
+        7,
+        2,
+        5
+      ],
+      "rotation": 2,
+      "a_to_b_correct": true,
+      "b_to_c_correct": true,
+      "a_to_c_correct": true,
+      "zero_shot_b_correct": true,
+      "zero_shot_c_correct": true,
+      "nontransitive_pattern_retained": false,
+      "both_zero_shot_controls_wrong": false,
+      "strict_survival": false
+    },
+    {
+      "triple": [
+        8,
+        2,
+        0
+      ],
+      "rotation": 1,
+      "a_to_b_correct": true,
+      "b_to_c_correct": true,
+      "a_to_c_correct": true,
+      "zero_shot_b_correct": false,
+      "zero_shot_c_correct": true,
+      "nontransitive_pattern_retained": false,
+      "both_zero_shot_controls_wrong": false,
+      "strict_survival": false
+    },
+    {
+      "triple": [
+        8,
+        2,
+        0
+      ],
+      "rotation": 2,
+      "a_to_b_correct": true,
+      "b_to_c_correct": false,
+      "a_to_c_correct": false,
+      "zero_shot_b_correct": true,
+      "zero_shot_c_correct": false,
+      "nontransitive_pattern_retained": false,
+      "both_zero_shot_controls_wrong": false,
+      "strict_survival": false
+    },
+    {
+      "triple": [
+        8,
+        2,
+        5
+      ],
+      "rotation": 1,
+      "a_to_b_correct": true,
+      "b_to_c_correct": true,
+      "a_to_c_correct": true,
+      "zero_shot_b_correct": false,
+      "zero_shot_c_correct": false,
+      "nontransitive_pattern_retained": false,
+      "both_zero_shot_controls_wrong": true,
+      "strict_survival": false
+    },
+    {
+      "triple": [
+        8,
+        2,
+        5
+      ],
+      "rotation": 2,
+      "a_to_b_correct": true,
+      "b_to_c_correct": true,
+      "a_to_c_correct": false,
+      "zero_shot_b_correct": true,
+      "zero_shot_c_correct": true,
+      "nontransitive_pattern_retained": true,
+      "both_zero_shot_controls_wrong": false,
+      "strict_survival": false
+    },
+    {
+      "triple": [
+        10,
+        2,
+        0
+      ],
+      "rotation": 1,
+      "a_to_b_correct": true,
+      "b_to_c_correct": true,
+      "a_to_c_correct": true,
+      "zero_shot_b_correct": false,
+      "zero_shot_c_correct": true,
+      "nontransitive_pattern_retained": false,
+      "both_zero_shot_controls_wrong": false,
+      "strict_survival": false
+    },
+    {
+      "triple": [
+        10,
+        2,
+        0
+      ],
+      "rotation": 2,
+      "a_to_b_correct": true,
+      "b_to_c_correct": false,
+      "a_to_c_correct": true,
+      "zero_shot_b_correct": true,
+      "zero_shot_c_correct": false,
+      "nontransitive_pattern_retained": false,
+      "both_zero_shot_controls_wrong": false,
+      "strict_survival": false
+    }
+  ],
+  "canonical_zero_shot_correct": 11,
+  "zero_shot_correct_by_rotation": {
+    "0": 11,
+    "1": 12,
+    "2": 11,
+    "3": 8
+  },
+  "zero_shot_label_counts": {
+    "A": 23,
+    "C": 9,
+    "B": 24,
+    "D": 8
+  },
+  "rotated_edge_label_counts": {
+    "C": 24,
+    "B": 18,
+    "D": 3,
+    "A": 1
+  },
+  "costs": {
+    "zero_shot": {
+      "calls": 64,
+      "input_tokens": 10092,
+      "elapsed_ns": 12017821169
+    },
+    "rotated_edges": {
+      "calls": 46,
+      "input_tokens": 12726,
+      "elapsed_ns": 14551723956
+    }
+  },
+  "meta": {
+    "checkpoint_sha256": {
+      "config.json": "507a6701220524eb8b283425bf0856a9ae4f21f4052e563896ddd668994b1dc7",
+      "model.safetensors": "0e86d9677e519323849eac1bc272caae88567a481ff188c431f70be543d9995f",
+      "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+    },
+    "mlx_peak_active_bytes": 1490897184,
+    "process_maxrss_bytes": 1156890624,
+    "model_calls": 110,
+    "head_check_max_abs": 0.1875,
+    "chunk_check_max_abs": 0.09375,
+    "software": {
+      "mlx": "0.32.3",
+      "mlx-lm": "0.31.3"
+    },
+    "followup_readout": "standard full-forward model wrapper; explicit assistant Answer: prefix; leading-space labels"
+  },
+  "limitations": [
+    "Witnesses selected on canonical pool outcomes; dependent triples and rotations.",
+    "Definition is exact singleton correctness under one checkpoint and prompt.",
+    "Option rotations assess robustness to two ordering changes only.",
+    "No confirmation outcomes or model-selection efficacy are inferred."
+  ]
+}

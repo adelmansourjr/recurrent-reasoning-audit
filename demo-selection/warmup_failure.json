@@ -1,0 +1,7 @@
+{
+  "stage": "initial warmup only; no experiment outcomes collected",
+  "error": "All-vocabulary BF16 difference exceeded .01",
+  "observed_max_abs": 0.1875,
+  "old_source_commit": "ff3691a",
+  "resolution": "Keep fixed fast scoring in all arms; check four-label argmax and tolerance, record differences; refreeze before pool inference"
+}

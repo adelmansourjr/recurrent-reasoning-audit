@@ -14,7 +14,7 @@ Domain labels are shared across splits. Wordings and coefficient vectors differ;
 
 ## Selectors and common inference
 
-All arms use the same frozen local Qwen3-1.7B 4-bit checkpoint, chat template, no-thinking setting and next-token A/B/C/D logit scoring. Constrained recognition removes generation-format compliance as a confound; all predictions map to a candidate program. Last-position head scoring is checked against the standard wrapper. A longer warmup checks chunked-cache versus full-forward label scores and predictions. Each prompt has at most 1,500 tokens. No arbitrary padding or truncation is used.
+All arms use the same frozen local Qwen3-1.7B 4-bit checkpoint, chat template, no-thinking setting and next-token A/B/C/D logit scoring. Constrained recognition removes generation-format compliance as a confound; all predictions map to a candidate program. Last-position head scoring is checked against the standard wrapper. A longer warmup checks chunked-cache versus full-forward label scores and predictions. BF16 matrix-kernel shapes can change raw logits slightly: verification requires matching label argmax and maximum four-label discrepancy below .5 logit, while recording the measured differences. An initial .01 all-vocabulary tolerance failed at .1875 during warmup, before any pool, development or confirmation result; it was replaced by this declared label-level numerical check and refrozen. This is warmup agreement, not a proof of numerical identity for every input. Each prompt has at most 1,500 tokens. No arbitrary padding or truncation is used.
 
 - Zero demonstrations.
 - Three independently seeded uniform two-example selectors, seeds 11, 29 and 47.

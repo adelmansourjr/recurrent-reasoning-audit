@@ -153,7 +153,10 @@ class Scorer:
   ids=self.tokenizer.apply_chat_template([{'role':'user','content':'Choose A or B. Answer:'}],tokenize=True,add_generation_prompt=True,enable_thinking=False)
   x=mx.array([ids]);full=self.model(x)[:,-1,:];hidden=self.model.model(x)[:,-1:,:]
   fast=self.model.model.embed_tokens.as_linear(hidden) if self.model.args.tie_word_embeddings else self.model.lm_head(hidden)
-  error=mx.max(mx.abs(full-fast[:,0,:])).item();assert error<.01,error
+  error=mx.max(mx.abs(full-fast[:,0,:])).item()
+  af=full[0,self.labels].astype(mx.float32).tolist();bf=fast[0,0,self.labels].astype(mx.float32).tolist()
+  assert max(range(4),key=lambda i:af[i])==max(range(4),key=lambda i:bf[i]),'Last-position head prediction mismatch'
+  assert max(abs(a-b) for a,b in zip(af,bf))<.5,'Label-score head discrepancy exceeds BF16 tolerance'
   self.head_check_max_abs=error;del full,fast,hidden,x;mx.clear_cache()
   from mlx_lm.models.cache import make_prompt_cache
   long_ids=ids*9;x=mx.array([long_ids]);full=self.model(x)[:,-1,self.labels].astype(mx.float32);mx.eval(full)

@@ -1,0 +1,954 @@
+{
+  "plan": {
+    "scope": "Exploratory development-only diagnostic; no efficacy claim",
+    "reason": "Original pool and development readouts always selected A",
+    "source_sha256": "8993f0abc23e44dbb69c6f0a7aa572a03102673725c106b0b0efe63fc2f177a6",
+    "study_freeze": {
+      "protocol_sha256": "3ebb4c36f8af00af0737a943458cd2853bf0502320f9c9af150e421d40c6037b",
+      "source_sha256": "e0409b8f32d4824995ccbe5deb9aaa841034327eed63555cd57c5d9a2e9a08b8",
+      "manifest_sha256": "bc258dafd811ce7011ee9ea496615c2586f08adda890e2c80180fc16d528b4e5",
+      "test_generated_before_model_run": true,
+      "seed": 991763
+    },
+    "before_diagnostic_inference": true,
+    "ids": [
+      "dev-000-0",
+      "dev-001-0",
+      "dev-002-0",
+      "dev-003-0"
+    ],
+    "rotations": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "selector": "lexical; same selected demonstrations across target rotations",
+    "conditions": {
+      "bare": "Original Scorer.score, bare A-D tokens",
+      "answer_prefix_space_labels": "Append assistant Answer:; score leading-space A-D tokens"
+    },
+    "wrapper_checks": [
+      [
+        "dev-000-0",
+        0,
+        "bare"
+      ],
+      [
+        "dev-003-0",
+        0,
+        "answer_prefix_space_labels"
+      ]
+    ],
+    "memory_observed_abort_bytes": 2684354560
+  },
+  "plan_sha256": "37d0b3f2e03dd109b1432353f411db4f94296b0704aa12b213ce67774ae18ad4",
+  "label_ids": {
+    "bare": [
+      32,
+      33,
+      34,
+      35
+    ],
+    "leading_space": [
+      362,
+      425,
+      356,
+      422
+    ]
+  },
+  "rows": [
+    {
+      "id": "dev-000-0",
+      "group": "dev-000",
+      "rotation": 0,
+      "condition": "bare",
+      "selected": [
+        0,
+        12
+      ],
+      "correct_label": 2,
+      "correct": false,
+      "prompt": "Select the exact signed coefficient vector. Include multiplicity and sign; ignore excluded sources. Choose A, B, C or D.\n\nTrack the signed change in account balance.\nFor source C, add its amount three times. For source A, add its amount once. For source B, add its amount twice. For source D, subtract its amount three times.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [2, 1, 3, -3]\nB: [1, 2, 0, -3]\nC: [1, -2, 3, -3]\nD: [1, 2, 3, -3]\nAnswer: D\n\nTrack the signed change in account balance.\nFor source B, subtract its amount three times. For source A, add its amount three times. For source C, add its amount three times. For source D, subtract its amount twice.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [3, 1, 3, -2]\nB: [3, -3, 3, -2]\nC: [3, -3, -3, -2]\nD: [-3, 3, 3, -2]\nAnswer: B\n\nTrack the signed change in account balance.\nSubtract source D twice. Add source B once. Subtract source A three times. Add source C once.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [-3, 1, -2, -2]\nB: [3, 1, 1, -2]\nC: [-3, 1, 1, -2]\nD: [1, -3, 1, -2]\nAnswer:",
+      "prediction": 0,
+      "label_logits": [
+        18.25,
+        14.0625,
+        14.5,
+        16.375
+      ],
+      "input_tokens": 387,
+      "elapsed_ns": 381964917
+    },
+    {
+      "id": "dev-000-0",
+      "group": "dev-000",
+      "rotation": 0,
+      "condition": "answer_prefix_space_labels",
+      "selected": [
+        0,
+        12
+      ],
+      "correct_label": 2,
+      "correct": true,
+      "prompt": "Select the exact signed coefficient vector. Include multiplicity and sign; ignore excluded sources. Choose A, B, C or D.\n\nTrack the signed change in account balance.\nFor source C, add its amount three times. For source A, add its amount once. For source B, add its amount twice. For source D, subtract its amount three times.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [2, 1, 3, -3]\nB: [1, 2, 0, -3]\nC: [1, -2, 3, -3]\nD: [1, 2, 3, -3]\nAnswer: D\n\nTrack the signed change in account balance.\nFor source B, subtract its amount three times. For source A, add its amount three times. For source C, add its amount three times. For source D, subtract its amount twice.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [3, 1, 3, -2]\nB: [3, -3, 3, -2]\nC: [3, -3, -3, -2]\nD: [-3, 3, 3, -2]\nAnswer: B\n\nTrack the signed change in account balance.\nSubtract source D twice. Add source B once. Subtract source A three times. Add source C once.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [-3, 1, -2, -2]\nB: [3, 1, 1, -2]\nC: [-3, 1, 1, -2]\nD: [1, -3, 1, -2]\nAnswer:",
+      "prediction": 2,
+      "label_logits": [
+        24.875,
+        23.75,
+        34.5,
+        29.5
+      ],
+      "input_tokens": 389,
+      "elapsed_ns": 384233292
+    },
+    {
+      "id": "dev-000-0",
+      "group": "dev-000",
+      "rotation": 1,
+      "condition": "bare",
+      "selected": [
+        0,
+        12
+      ],
+      "correct_label": 1,
+      "correct": false,
+      "prompt": "Select the exact signed coefficient vector. Include multiplicity and sign; ignore excluded sources. Choose A, B, C or D.\n\nTrack the signed change in account balance.\nFor source C, add its amount three times. For source A, add its amount once. For source B, add its amount twice. For source D, subtract its amount three times.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [2, 1, 3, -3]\nB: [1, 2, 0, -3]\nC: [1, -2, 3, -3]\nD: [1, 2, 3, -3]\nAnswer: D\n\nTrack the signed change in account balance.\nFor source B, subtract its amount three times. For source A, add its amount three times. For source C, add its amount three times. For source D, subtract its amount twice.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [3, 1, 3, -2]\nB: [3, -3, 3, -2]\nC: [3, -3, -3, -2]\nD: [-3, 3, 3, -2]\nAnswer: B\n\nTrack the signed change in account balance.\nSubtract source D twice. Add source B once. Subtract source A three times. Add source C once.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [3, 1, 1, -2]\nB: [-3, 1, 1, -2]\nC: [1, -3, 1, -2]\nD: [-3, 1, -2, -2]\nAnswer:",
+      "prediction": 0,
+      "label_logits": [
+        18.25,
+        14.125,
+        14.4375,
+        16.375
+      ],
+      "input_tokens": 387,
+      "elapsed_ns": 378961166
+    },
+    {
+      "id": "dev-000-0",
+      "group": "dev-000",
+      "rotation": 1,
+      "condition": "answer_prefix_space_labels",
+      "selected": [
+        0,
+        12
+      ],
+      "correct_label": 1,
+      "correct": false,
+      "prompt": "Select the exact signed coefficient vector. Include multiplicity and sign; ignore excluded sources. Choose A, B, C or D.\n\nTrack the signed change in account balance.\nFor source C, add its amount three times. For source A, add its amount once. For source B, add its amount twice. For source D, subtract its amount three times.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [2, 1, 3, -3]\nB: [1, 2, 0, -3]\nC: [1, -2, 3, -3]\nD: [1, 2, 3, -3]\nAnswer: D\n\nTrack the signed change in account balance.\nFor source B, subtract its amount three times. For source A, add its amount three times. For source C, add its amount three times. For source D, subtract its amount twice.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [3, 1, 3, -2]\nB: [3, -3, 3, -2]\nC: [3, -3, -3, -2]\nD: [-3, 3, 3, -2]\nAnswer: B\n\nTrack the signed change in account balance.\nSubtract source D twice. Add source B once. Subtract source A three times. Add source C once.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [3, 1, 1, -2]\nB: [-3, 1, 1, -2]\nC: [1, -3, 1, -2]\nD: [-3, 1, -2, -2]\nAnswer:",
+      "prediction": 2,
+      "label_logits": [
+        27.75,
+        31.125,
+        31.75,
+        30.125
+      ],
+      "input_tokens": 389,
+      "elapsed_ns": 387406417
+    },
+    {
+      "id": "dev-000-0",
+      "group": "dev-000",
+      "rotation": 2,
+      "condition": "bare",
+      "selected": [
+        0,
+        12
+      ],
+      "correct_label": 0,
+      "correct": true,
+      "prompt": "Select the exact signed coefficient vector. Include multiplicity and sign; ignore excluded sources. Choose A, B, C or D.\n\nTrack the signed change in account balance.\nFor source C, add its amount three times. For source A, add its amount once. For source B, add its amount twice. For source D, subtract its amount three times.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [2, 1, 3, -3]\nB: [1, 2, 0, -3]\nC: [1, -2, 3, -3]\nD: [1, 2, 3, -3]\nAnswer: D\n\nTrack the signed change in account balance.\nFor source B, subtract its amount three times. For source A, add its amount three times. For source C, add its amount three times. For source D, subtract its amount twice.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [3, 1, 3, -2]\nB: [3, -3, 3, -2]\nC: [3, -3, -3, -2]\nD: [-3, 3, 3, -2]\nAnswer: B\n\nTrack the signed change in account balance.\nSubtract source D twice. Add source B once. Subtract source A three times. Add source C once.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [-3, 1, 1, -2]\nB: [1, -3, 1, -2]\nC: [-3, 1, -2, -2]\nD: [3, 1, 1, -2]\nAnswer:",
+      "prediction": 0,
+      "label_logits": [
+        18.5,
+        14.125,
+        14.6875,
+        16.375
+      ],
+      "input_tokens": 387,
+      "elapsed_ns": 399033584
+    },
+    {
+      "id": "dev-000-0",
+      "group": "dev-000",
+      "rotation": 2,
+      "condition": "answer_prefix_space_labels",
+      "selected": [
+        0,
+        12
+      ],
+      "correct_label": 0,
+      "correct": true,
+      "prompt": "Select the exact signed coefficient vector. Include multiplicity and sign; ignore excluded sources. Choose A, B, C or D.\n\nTrack the signed change in account balance.\nFor source C, add its amount three times. For source A, add its amount once. For source B, add its amount twice. For source D, subtract its amount three times.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [2, 1, 3, -3]\nB: [1, 2, 0, -3]\nC: [1, -2, 3, -3]\nD: [1, 2, 3, -3]\nAnswer: D\n\nTrack the signed change in account balance.\nFor source B, subtract its amount three times. For source A, add its amount three times. For source C, add its amount three times. For source D, subtract its amount twice.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [3, 1, 3, -2]\nB: [3, -3, 3, -2]\nC: [3, -3, -3, -2]\nD: [-3, 3, 3, -2]\nAnswer: B\n\nTrack the signed change in account balance.\nSubtract source D twice. Add source B once. Subtract source A three times. Add source C once.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [-3, 1, 1, -2]\nB: [1, -3, 1, -2]\nC: [-3, 1, -2, -2]\nD: [3, 1, 1, -2]\nAnswer:",
+      "prediction": 0,
+      "label_logits": [
+        32.75,
+        30.25,
+        31.125,
+        30.625
+      ],
+      "input_tokens": 389,
+      "elapsed_ns": 403871458
+    },
+    {
+      "id": "dev-000-0",
+      "group": "dev-000",
+      "rotation": 3,
+      "condition": "bare",
+      "selected": [
+        0,
+        12
+      ],
+      "correct_label": 3,
+      "correct": false,
+      "prompt": "Select the exact signed coefficient vector. Include multiplicity and sign; ignore excluded sources. Choose A, B, C or D.\n\nTrack the signed change in account balance.\nFor source C, add its amount three times. For source A, add its amount once. For source B, add its amount twice. For source D, subtract its amount three times.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [2, 1, 3, -3]\nB: [1, 2, 0, -3]\nC: [1, -2, 3, -3]\nD: [1, 2, 3, -3]\nAnswer: D\n\nTrack the signed change in account balance.\nFor source B, subtract its amount three times. For source A, add its amount three times. For source C, add its amount three times. For source D, subtract its amount twice.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [3, 1, 3, -2]\nB: [3, -3, 3, -2]\nC: [3, -3, -3, -2]\nD: [-3, 3, 3, -2]\nAnswer: B\n\nTrack the signed change in account balance.\nSubtract source D twice. Add source B once. Subtract source A three times. Add source C once.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [1, -3, 1, -2]\nB: [-3, 1, -2, -2]\nC: [3, 1, 1, -2]\nD: [-3, 1, 1, -2]\nAnswer:",
+      "prediction": 0,
+      "label_logits": [
+        18.125,
+        14.1875,
+        14.4375,
+        16.25
+      ],
+      "input_tokens": 387,
+      "elapsed_ns": 382000750
+    },
+    {
+      "id": "dev-000-0",
+      "group": "dev-000",
+      "rotation": 3,
+      "condition": "answer_prefix_space_labels",
+      "selected": [
+        0,
+        12
+      ],
+      "correct_label": 3,
+      "correct": true,
+      "prompt": "Select the exact signed coefficient vector. Include multiplicity and sign; ignore excluded sources. Choose A, B, C or D.\n\nTrack the signed change in account balance.\nFor source C, add its amount three times. For source A, add its amount once. For source B, add its amount twice. For source D, subtract its amount three times.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [2, 1, 3, -3]\nB: [1, 2, 0, -3]\nC: [1, -2, 3, -3]\nD: [1, 2, 3, -3]\nAnswer: D\n\nTrack the signed change in account balance.\nFor source B, subtract its amount three times. For source A, add its amount three times. For source C, add its amount three times. For source D, subtract its amount twice.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [3, 1, 3, -2]\nB: [3, -3, 3, -2]\nC: [3, -3, -3, -2]\nD: [-3, 3, 3, -2]\nAnswer: B\n\nTrack the signed change in account balance.\nSubtract source D twice. Add source B once. Subtract source A three times. Add source C once.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [1, -3, 1, -2]\nB: [-3, 1, -2, -2]\nC: [3, 1, 1, -2]\nD: [-3, 1, 1, -2]\nAnswer:",
+      "prediction": 3,
+      "label_logits": [
+        22.125,
+        19.875,
+        22.625,
+        34.0
+      ],
+      "input_tokens": 389,
+      "elapsed_ns": 383402667
+    },
+    {
+      "id": "dev-001-0",
+      "group": "dev-001",
+      "rotation": 0,
+      "condition": "bare",
+      "selected": [
+        9,
+        13
+      ],
+      "correct_label": 1,
+      "correct": false,
+      "prompt": "Select the exact signed coefficient vector. Include multiplicity and sign; ignore excluded sources. Choose A, B, C or D.\n\nTrack the signed change in warehouse stock.\nFor source A, add its amount three times. For source C, add its amount twice. For source B, subtract its amount once. For source D, add its amount twice.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [3, -2, 2, 2]\nB: [-1, 3, 2, 2]\nC: [3, -1, 2, 2]\nD: [3, -1, 2, -2]\nAnswer: C\n\nTrack the signed change in warehouse stock.\nIgnore source D. For source A, add its amount once. For source B, subtract its amount twice. For source C, add its amount three times.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [1, 2, 3, 0]\nB: [1, -2, 3, 0]\nC: [1, -2, -1, 0]\nD: [-2, 1, 3, 0]\nAnswer: B\n\nTrack the signed change in warehouse stock.\nAdd source D twice. Add source B twice. Subtract source C three times. Source A does not count.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [2, 0, -3, 2]\nB: [0, 2, -3, 2]\nC: [0, 2, 1, 2]\nD: [0, -2, -3, 2]\nAnswer:",
+      "prediction": 0,
+      "label_logits": [
+        18.125,
+        14.25,
+        14.75,
+        15.6875
+      ],
+      "input_tokens": 379,
+      "elapsed_ns": 377952583
+    },
+    {
+      "id": "dev-001-0",
+      "group": "dev-001",
+      "rotation": 0,
+      "condition": "answer_prefix_space_labels",
+      "selected": [
+        9,
+        13
+      ],
+      "correct_label": 1,
+      "correct": true,
+      "prompt": "Select the exact signed coefficient vector. Include multiplicity and sign; ignore excluded sources. Choose A, B, C or D.\n\nTrack the signed change in warehouse stock.\nFor source A, add its amount three times. For source C, add its amount twice. For source B, subtract its amount once. For source D, add its amount twice.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [3, -2, 2, 2]\nB: [-1, 3, 2, 2]\nC: [3, -1, 2, 2]\nD: [3, -1, 2, -2]\nAnswer: C\n\nTrack the signed change in warehouse stock.\nIgnore source D. For source A, add its amount once. For source B, subtract its amount twice. For source C, add its amount three times.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [1, 2, 3, 0]\nB: [1, -2, 3, 0]\nC: [1, -2, -1, 0]\nD: [-2, 1, 3, 0]\nAnswer: B\n\nTrack the signed change in warehouse stock.\nAdd source D twice. Add source B twice. Subtract source C three times. Source A does not count.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [2, 0, -3, 2]\nB: [0, 2, -3, 2]\nC: [0, 2, 1, 2]\nD: [0, -2, -3, 2]\nAnswer:",
+      "prediction": 1,
+      "label_logits": [
+        25.875,
+        34.5,
+        23.5,
+        25.625
+      ],
+      "input_tokens": 381,
+      "elapsed_ns": 398913792
+    },
+    {
+      "id": "dev-001-0",
+      "group": "dev-001",
+      "rotation": 1,
+      "condition": "bare",
+      "selected": [
+        9,
+        13
+      ],
+      "correct_label": 0,
+      "correct": true,
+      "prompt": "Select the exact signed coefficient vector. Include multiplicity and sign; ignore excluded sources. Choose A, B, C or D.\n\nTrack the signed change in warehouse stock.\nFor source A, add its amount three times. For source C, add its amount twice. For source B, subtract its amount once. For source D, add its amount twice.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [3, -2, 2, 2]\nB: [-1, 3, 2, 2]\nC: [3, -1, 2, 2]\nD: [3, -1, 2, -2]\nAnswer: C\n\nTrack the signed change in warehouse stock.\nIgnore source D. For source A, add its amount once. For source B, subtract its amount twice. For source C, add its amount three times.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [1, 2, 3, 0]\nB: [1, -2, 3, 0]\nC: [1, -2, -1, 0]\nD: [-2, 1, 3, 0]\nAnswer: B\n\nTrack the signed change in warehouse stock.\nAdd source D twice. Add source B twice. Subtract source C three times. Source A does not count.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [0, 2, -3, 2]\nB: [0, 2, 1, 2]\nC: [0, -2, -3, 2]\nD: [2, 0, -3, 2]\nAnswer:",
+      "prediction": 0,
+      "label_logits": [
+        18.5,
+        14.625,
+        15.0625,
+        15.9375
+      ],
+      "input_tokens": 379,
+      "elapsed_ns": 386763375
+    },
+    {
+      "id": "dev-001-0",
+      "group": "dev-001",
+      "rotation": 1,
+      "condition": "answer_prefix_space_labels",
+      "selected": [
+        9,
+        13
+      ],
+      "correct_label": 0,
+      "correct": true,
+      "prompt": "Select the exact signed coefficient vector. Include multiplicity and sign; ignore excluded sources. Choose A, B, C or D.\n\nTrack the signed change in warehouse stock.\nFor source A, add its amount three times. For source C, add its amount twice. For source B, subtract its amount once. For source D, add its amount twice.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [3, -2, 2, 2]\nB: [-1, 3, 2, 2]\nC: [3, -1, 2, 2]\nD: [3, -1, 2, -2]\nAnswer: C\n\nTrack the signed change in warehouse stock.\nIgnore source D. For source A, add its amount once. For source B, subtract its amount twice. For source C, add its amount three times.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [1, 2, 3, 0]\nB: [1, -2, 3, 0]\nC: [1, -2, -1, 0]\nD: [-2, 1, 3, 0]\nAnswer: B\n\nTrack the signed change in warehouse stock.\nAdd source D twice. Add source B twice. Subtract source C three times. Source A does not count.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [0, 2, -3, 2]\nB: [0, 2, 1, 2]\nC: [0, -2, -3, 2]\nD: [2, 0, -3, 2]\nAnswer:",
+      "prediction": 0,
+      "label_logits": [
+        34.0,
+        26.375,
+        29.375,
+        33.0
+      ],
+      "input_tokens": 381,
+      "elapsed_ns": 397891208
+    },
+    {
+      "id": "dev-001-0",
+      "group": "dev-001",
+      "rotation": 2,
+      "condition": "bare",
+      "selected": [
+        9,
+        13
+      ],
+      "correct_label": 3,
+      "correct": false,
+      "prompt": "Select the exact signed coefficient vector. Include multiplicity and sign; ignore excluded sources. Choose A, B, C or D.\n\nTrack the signed change in warehouse stock.\nFor source A, add its amount three times. For source C, add its amount twice. For source B, subtract its amount once. For source D, add its amount twice.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [3, -2, 2, 2]\nB: [-1, 3, 2, 2]\nC: [3, -1, 2, 2]\nD: [3, -1, 2, -2]\nAnswer: C\n\nTrack the signed change in warehouse stock.\nIgnore source D. For source A, add its amount once. For source B, subtract its amount twice. For source C, add its amount three times.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [1, 2, 3, 0]\nB: [1, -2, 3, 0]\nC: [1, -2, -1, 0]\nD: [-2, 1, 3, 0]\nAnswer: B\n\nTrack the signed change in warehouse stock.\nAdd source D twice. Add source B twice. Subtract source C three times. Source A does not count.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [0, 2, 1, 2]\nB: [0, -2, -3, 2]\nC: [2, 0, -3, 2]\nD: [0, 2, -3, 2]\nAnswer:",
+      "prediction": 0,
+      "label_logits": [
+        18.125,
+        14.25,
+        14.875,
+        15.4375
+      ],
+      "input_tokens": 379,
+      "elapsed_ns": 392113333
+    },
+    {
+      "id": "dev-001-0",
+      "group": "dev-001",
+      "rotation": 2,
+      "condition": "answer_prefix_space_labels",
+      "selected": [
+        9,
+        13
+      ],
+      "correct_label": 3,
+      "correct": true,
+      "prompt": "Select the exact signed coefficient vector. Include multiplicity and sign; ignore excluded sources. Choose A, B, C or D.\n\nTrack the signed change in warehouse stock.\nFor source A, add its amount three times. For source C, add its amount twice. For source B, subtract its amount once. For source D, add its amount twice.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [3, -2, 2, 2]\nB: [-1, 3, 2, 2]\nC: [3, -1, 2, 2]\nD: [3, -1, 2, -2]\nAnswer: C\n\nTrack the signed change in warehouse stock.\nIgnore source D. For source A, add its amount once. For source B, subtract its amount twice. For source C, add its amount three times.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [1, 2, 3, 0]\nB: [1, -2, 3, 0]\nC: [1, -2, -1, 0]\nD: [-2, 1, 3, 0]\nAnswer: B\n\nTrack the signed change in warehouse stock.\nAdd source D twice. Add source B twice. Subtract source C three times. Source A does not count.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [0, 2, 1, 2]\nB: [0, -2, -3, 2]\nC: [2, 0, -3, 2]\nD: [0, 2, -3, 2]\nAnswer:",
+      "prediction": 3,
+      "label_logits": [
+        21.875,
+        22.625,
+        29.5,
+        33.5
+      ],
+      "input_tokens": 381,
+      "elapsed_ns": 374886167
+    },
+    {
+      "id": "dev-001-0",
+      "group": "dev-001",
+      "rotation": 3,
+      "condition": "bare",
+      "selected": [
+        9,
+        13
+      ],
+      "correct_label": 2,
+      "correct": false,
+      "prompt": "Select the exact signed coefficient vector. Include multiplicity and sign; ignore excluded sources. Choose A, B, C or D.\n\nTrack the signed change in warehouse stock.\nFor source A, add its amount three times. For source C, add its amount twice. For source B, subtract its amount once. For source D, add its amount twice.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [3, -2, 2, 2]\nB: [-1, 3, 2, 2]\nC: [3, -1, 2, 2]\nD: [3, -1, 2, -2]\nAnswer: C\n\nTrack the signed change in warehouse stock.\nIgnore source D. For source A, add its amount once. For source B, subtract its amount twice. For source C, add its amount three times.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [1, 2, 3, 0]\nB: [1, -2, 3, 0]\nC: [1, -2, -1, 0]\nD: [-2, 1, 3, 0]\nAnswer: B\n\nTrack the signed change in warehouse stock.\nAdd source D twice. Add source B twice. Subtract source C three times. Source A does not count.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [0, -2, -3, 2]\nB: [2, 0, -3, 2]\nC: [0, 2, -3, 2]\nD: [0, 2, 1, 2]\nAnswer:",
+      "prediction": 0,
+      "label_logits": [
+        18.0,
+        14.1875,
+        14.5625,
+        15.5
+      ],
+      "input_tokens": 379,
+      "elapsed_ns": 397352458
+    },
+    {
+      "id": "dev-001-0",
+      "group": "dev-001",
+      "rotation": 3,
+      "condition": "answer_prefix_space_labels",
+      "selected": [
+        9,
+        13
+      ],
+      "correct_label": 2,
+      "correct": true,
+      "prompt": "Select the exact signed coefficient vector. Include multiplicity and sign; ignore excluded sources. Choose A, B, C or D.\n\nTrack the signed change in warehouse stock.\nFor source A, add its amount three times. For source C, add its amount twice. For source B, subtract its amount once. For source D, add its amount twice.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [3, -2, 2, 2]\nB: [-1, 3, 2, 2]\nC: [3, -1, 2, 2]\nD: [3, -1, 2, -2]\nAnswer: C\n\nTrack the signed change in warehouse stock.\nIgnore source D. For source A, add its amount once. For source B, subtract its amount twice. For source C, add its amount three times.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [1, 2, 3, 0]\nB: [1, -2, 3, 0]\nC: [1, -2, -1, 0]\nD: [-2, 1, 3, 0]\nAnswer: B\n\nTrack the signed change in warehouse stock.\nAdd source D twice. Add source B twice. Subtract source C three times. Source A does not count.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [0, -2, -3, 2]\nB: [2, 0, -3, 2]\nC: [0, 2, -3, 2]\nD: [0, 2, 1, 2]\nAnswer:",
+      "prediction": 2,
+      "label_logits": [
+        23.25,
+        30.0,
+        32.25,
+        23.5
+      ],
+      "input_tokens": 381,
+      "elapsed_ns": 395930833
+    },
+    {
+      "id": "dev-002-0",
+      "group": "dev-002",
+      "rotation": 0,
+      "condition": "bare",
+      "selected": [
+        2,
+        6
+      ],
+      "correct_label": 1,
+      "correct": false,
+      "prompt": "Select the exact signed coefficient vector. Include multiplicity and sign; ignore excluded sources. Choose A, B, C or D.\n\nTrack the signed change in contest score.\nFor source B, subtract its amount once. For source D, add its amount three times. For source C, add its amount three times. Ignore source A.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [0, -1, -2, 3]\nB: [-1, 0, 3, 3]\nC: [0, -1, -3, 3]\nD: [0, -1, 3, 3]\nAnswer: D\n\nTrack the signed change in contest score.\nFor source A, subtract its amount three times. For source B, add its amount twice. For source D, subtract its amount twice. For source C, subtract its amount once.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [-3, 2, -1, -2]\nB: [-2, 2, -1, -2]\nC: [-3, 2, -1, 2]\nD: [2, -3, -1, -2]\nAnswer: A\n\nTrack the signed change in contest score.\nSource D does not count. Subtract source B three times. Add source C once. Add source A three times.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [-2, -3, 1, 0]\nB: [3, -3, 1, 0]\nC: [-3, -3, 1, 0]\nD: [-3, 3, 1, 0]\nAnswer:",
+      "prediction": 0,
+      "label_logits": [
+        18.375,
+        14.125,
+        14.1875,
+        15.75
+      ],
+      "input_tokens": 381,
+      "elapsed_ns": 397048417
+    },
+    {
+      "id": "dev-002-0",
+      "group": "dev-002",
+      "rotation": 0,
+      "condition": "answer_prefix_space_labels",
+      "selected": [
+        2,
+        6
+      ],
+      "correct_label": 1,
+      "correct": false,
+      "prompt": "Select the exact signed coefficient vector. Include multiplicity and sign; ignore excluded sources. Choose A, B, C or D.\n\nTrack the signed change in contest score.\nFor source B, subtract its amount once. For source D, add its amount three times. For source C, add its amount three times. Ignore source A.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [0, -1, -2, 3]\nB: [-1, 0, 3, 3]\nC: [0, -1, -3, 3]\nD: [0, -1, 3, 3]\nAnswer: D\n\nTrack the signed change in contest score.\nFor source A, subtract its amount three times. For source B, add its amount twice. For source D, subtract its amount twice. For source C, subtract its amount once.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [-3, 2, -1, -2]\nB: [-2, 2, -1, -2]\nC: [-3, 2, -1, 2]\nD: [2, -3, -1, -2]\nAnswer: A\n\nTrack the signed change in contest score.\nSource D does not count. Subtract source B three times. Add source C once. Add source A three times.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [-2, -3, 1, 0]\nB: [3, -3, 1, 0]\nC: [-3, -3, 1, 0]\nD: [-3, 3, 1, 0]\nAnswer:",
+      "prediction": 3,
+      "label_logits": [
+        30.375,
+        27.875,
+        29.375,
+        36.25
+      ],
+      "input_tokens": 383,
+      "elapsed_ns": 373034875
+    },
+    {
+      "id": "dev-002-0",
+      "group": "dev-002",
+      "rotation": 1,
+      "condition": "bare",
+      "selected": [
+        2,
+        6
+      ],
+      "correct_label": 0,
+      "correct": true,
+      "prompt": "Select the exact signed coefficient vector. Include multiplicity and sign; ignore excluded sources. Choose A, B, C or D.\n\nTrack the signed change in contest score.\nFor source B, subtract its amount once. For source D, add its amount three times. For source C, add its amount three times. Ignore source A.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [0, -1, -2, 3]\nB: [-1, 0, 3, 3]\nC: [0, -1, -3, 3]\nD: [0, -1, 3, 3]\nAnswer: D\n\nTrack the signed change in contest score.\nFor source A, subtract its amount three times. For source B, add its amount twice. For source D, subtract its amount twice. For source C, subtract its amount once.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [-3, 2, -1, -2]\nB: [-2, 2, -1, -2]\nC: [-3, 2, -1, 2]\nD: [2, -3, -1, -2]\nAnswer: A\n\nTrack the signed change in contest score.\nSource D does not count. Subtract source B three times. Add source C once. Add source A three times.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [3, -3, 1, 0]\nB: [-3, -3, 1, 0]\nC: [-3, 3, 1, 0]\nD: [-2, -3, 1, 0]\nAnswer:",
+      "prediction": 0,
+      "label_logits": [
+        18.5,
+        14.1875,
+        14.25,
+        15.625
+      ],
+      "input_tokens": 381,
+      "elapsed_ns": 369191000
+    },
+    {
+      "id": "dev-002-0",
+      "group": "dev-002",
+      "rotation": 1,
+      "condition": "answer_prefix_space_labels",
+      "selected": [
+        2,
+        6
+      ],
+      "correct_label": 0,
+      "correct": true,
+      "prompt": "Select the exact signed coefficient vector. Include multiplicity and sign; ignore excluded sources. Choose A, B, C or D.\n\nTrack the signed change in contest score.\nFor source B, subtract its amount once. For source D, add its amount three times. For source C, add its amount three times. Ignore source A.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [0, -1, -2, 3]\nB: [-1, 0, 3, 3]\nC: [0, -1, -3, 3]\nD: [0, -1, 3, 3]\nAnswer: D\n\nTrack the signed change in contest score.\nFor source A, subtract its amount three times. For source B, add its amount twice. For source D, subtract its amount twice. For source C, subtract its amount once.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [-3, 2, -1, -2]\nB: [-2, 2, -1, -2]\nC: [-3, 2, -1, 2]\nD: [2, -3, -1, -2]\nAnswer: A\n\nTrack the signed change in contest score.\nSource D does not count. Subtract source B three times. Add source C once. Add source A three times.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [3, -3, 1, 0]\nB: [-3, -3, 1, 0]\nC: [-3, 3, 1, 0]\nD: [-2, -3, 1, 0]\nAnswer:",
+      "prediction": 0,
+      "label_logits": [
+        35.75,
+        27.375,
+        31.875,
+        27.875
+      ],
+      "input_tokens": 383,
+      "elapsed_ns": 368581208
+    },
+    {
+      "id": "dev-002-0",
+      "group": "dev-002",
+      "rotation": 2,
+      "condition": "bare",
+      "selected": [
+        2,
+        6
+      ],
+      "correct_label": 3,
+      "correct": false,
+      "prompt": "Select the exact signed coefficient vector. Include multiplicity and sign; ignore excluded sources. Choose A, B, C or D.\n\nTrack the signed change in contest score.\nFor source B, subtract its amount once. For source D, add its amount three times. For source C, add its amount three times. Ignore source A.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [0, -1, -2, 3]\nB: [-1, 0, 3, 3]\nC: [0, -1, -3, 3]\nD: [0, -1, 3, 3]\nAnswer: D\n\nTrack the signed change in contest score.\nFor source A, subtract its amount three times. For source B, add its amount twice. For source D, subtract its amount twice. For source C, subtract its amount once.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [-3, 2, -1, -2]\nB: [-2, 2, -1, -2]\nC: [-3, 2, -1, 2]\nD: [2, -3, -1, -2]\nAnswer: A\n\nTrack the signed change in contest score.\nSource D does not count. Subtract source B three times. Add source C once. Add source A three times.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [-3, -3, 1, 0]\nB: [-3, 3, 1, 0]\nC: [-2, -3, 1, 0]\nD: [3, -3, 1, 0]\nAnswer:",
+      "prediction": 0,
+      "label_logits": [
+        18.25,
+        14.1875,
+        14.3125,
+        15.4375
+      ],
+      "input_tokens": 381,
+      "elapsed_ns": 369333875
+    },
+    {
+      "id": "dev-002-0",
+      "group": "dev-002",
+      "rotation": 2,
+      "condition": "answer_prefix_space_labels",
+      "selected": [
+        2,
+        6
+      ],
+      "correct_label": 3,
+      "correct": false,
+      "prompt": "Select the exact signed coefficient vector. Include multiplicity and sign; ignore excluded sources. Choose A, B, C or D.\n\nTrack the signed change in contest score.\nFor source B, subtract its amount once. For source D, add its amount three times. For source C, add its amount three times. Ignore source A.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [0, -1, -2, 3]\nB: [-1, 0, 3, 3]\nC: [0, -1, -3, 3]\nD: [0, -1, 3, 3]\nAnswer: D\n\nTrack the signed change in contest score.\nFor source A, subtract its amount three times. For source B, add its amount twice. For source D, subtract its amount twice. For source C, subtract its amount once.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [-3, 2, -1, -2]\nB: [-2, 2, -1, -2]\nC: [-3, 2, -1, 2]\nD: [2, -3, -1, -2]\nAnswer: A\n\nTrack the signed change in contest score.\nSource D does not count. Subtract source B three times. Add source C once. Add source A three times.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [-3, -3, 1, 0]\nB: [-3, 3, 1, 0]\nC: [-2, -3, 1, 0]\nD: [3, -3, 1, 0]\nAnswer:",
+      "prediction": 0,
+      "label_logits": [
+        34.5,
+        33.25,
+        27.25,
+        29.875
+      ],
+      "input_tokens": 383,
+      "elapsed_ns": 368810625
+    },
+    {
+      "id": "dev-002-0",
+      "group": "dev-002",
+      "rotation": 3,
+      "condition": "bare",
+      "selected": [
+        2,
+        6
+      ],
+      "correct_label": 2,
+      "correct": false,
+      "prompt": "Select the exact signed coefficient vector. Include multiplicity and sign; ignore excluded sources. Choose A, B, C or D.\n\nTrack the signed change in contest score.\nFor source B, subtract its amount once. For source D, add its amount three times. For source C, add its amount three times. Ignore source A.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [0, -1, -2, 3]\nB: [-1, 0, 3, 3]\nC: [0, -1, -3, 3]\nD: [0, -1, 3, 3]\nAnswer: D\n\nTrack the signed change in contest score.\nFor source A, subtract its amount three times. For source B, add its amount twice. For source D, subtract its amount twice. For source C, subtract its amount once.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [-3, 2, -1, -2]\nB: [-2, 2, -1, -2]\nC: [-3, 2, -1, 2]\nD: [2, -3, -1, -2]\nAnswer: A\n\nTrack the signed change in contest score.\nSource D does not count. Subtract source B three times. Add source C once. Add source A three times.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [-3, 3, 1, 0]\nB: [-2, -3, 1, 0]\nC: [3, -3, 1, 0]\nD: [-3, -3, 1, 0]\nAnswer:",
+      "prediction": 0,
+      "label_logits": [
+        18.0,
+        14.0625,
+        14.0,
+        15.5
+      ],
+      "input_tokens": 381,
+      "elapsed_ns": 369525625
+    },
+    {
+      "id": "dev-002-0",
+      "group": "dev-002",
+      "rotation": 3,
+      "condition": "answer_prefix_space_labels",
+      "selected": [
+        2,
+        6
+      ],
+      "correct_label": 2,
+      "correct": false,
+      "prompt": "Select the exact signed coefficient vector. Include multiplicity and sign; ignore excluded sources. Choose A, B, C or D.\n\nTrack the signed change in contest score.\nFor source B, subtract its amount once. For source D, add its amount three times. For source C, add its amount three times. Ignore source A.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [0, -1, -2, 3]\nB: [-1, 0, 3, 3]\nC: [0, -1, -3, 3]\nD: [0, -1, 3, 3]\nAnswer: D\n\nTrack the signed change in contest score.\nFor source A, subtract its amount three times. For source B, add its amount twice. For source D, subtract its amount twice. For source C, subtract its amount once.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [-3, 2, -1, -2]\nB: [-2, 2, -1, -2]\nC: [-3, 2, -1, 2]\nD: [2, -3, -1, -2]\nAnswer: A\n\nTrack the signed change in contest score.\nSource D does not count. Subtract source B three times. Add source C once. Add source A three times.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [-3, 3, 1, 0]\nB: [-2, -3, 1, 0]\nC: [3, -3, 1, 0]\nD: [-3, -3, 1, 0]\nAnswer:",
+      "prediction": 3,
+      "label_logits": [
+        32.25,
+        27.0,
+        29.25,
+        34.0
+      ],
+      "input_tokens": 383,
+      "elapsed_ns": 369236250
+    },
+    {
+      "id": "dev-003-0",
+      "group": "dev-003",
+      "rotation": 0,
+      "condition": "bare",
+      "selected": [
+        7,
+        11
+      ],
+      "correct_label": 0,
+      "correct": true,
+      "prompt": "Select the exact signed coefficient vector. Include multiplicity and sign; ignore excluded sources. Choose A, B, C or D.\n\nTrack the signed change in battery charge.\nFor source C, add its amount three times. For source D, subtract its amount twice. For source A, subtract its amount twice. For source B, add its amount once.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [-2, 1, 3, -1]\nB: [-2, -1, 3, -2]\nC: [-2, 1, 3, -2]\nD: [1, -2, 3, -2]\nAnswer: C\n\nTrack the signed change in battery charge.\nFor source B, subtract its amount once. For source C, add its amount twice. For source D, add its amount twice. For source A, add its amount once.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [1, -1, 2, 3]\nB: [-1, 1, 2, 2]\nC: [1, -1, 2, -2]\nD: [1, -1, 2, 2]\nAnswer: D\n\nTrack the signed change in battery charge.\nSubtract source A twice. Source B does not count. Source C does not count. Add source D twice.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [-2, 0, 0, 2]\nB: [2, 0, 0, 2]\nC: [0, -2, 0, 2]\nD: [-2, 0, -2, 2]\nAnswer:",
+      "prediction": 0,
+      "label_logits": [
+        17.625,
+        13.9375,
+        14.25,
+        15.875
+      ],
+      "input_tokens": 384,
+      "elapsed_ns": 367495250
+    },
+    {
+      "id": "dev-003-0",
+      "group": "dev-003",
+      "rotation": 0,
+      "condition": "answer_prefix_space_labels",
+      "selected": [
+        7,
+        11
+      ],
+      "correct_label": 0,
+      "correct": true,
+      "prompt": "Select the exact signed coefficient vector. Include multiplicity and sign; ignore excluded sources. Choose A, B, C or D.\n\nTrack the signed change in battery charge.\nFor source C, add its amount three times. For source D, subtract its amount twice. For source A, subtract its amount twice. For source B, add its amount once.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [-2, 1, 3, -1]\nB: [-2, -1, 3, -2]\nC: [-2, 1, 3, -2]\nD: [1, -2, 3, -2]\nAnswer: C\n\nTrack the signed change in battery charge.\nFor source B, subtract its amount once. For source C, add its amount twice. For source D, add its amount twice. For source A, add its amount once.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [1, -1, 2, 3]\nB: [-1, 1, 2, 2]\nC: [1, -1, 2, -2]\nD: [1, -1, 2, 2]\nAnswer: D\n\nTrack the signed change in battery charge.\nSubtract source A twice. Source B does not count. Source C does not count. Add source D twice.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [-2, 0, 0, 2]\nB: [2, 0, 0, 2]\nC: [0, -2, 0, 2]\nD: [-2, 0, -2, 2]\nAnswer:",
+      "prediction": 0,
+      "label_logits": [
+        36.5,
+        22.875,
+        22.75,
+        21.75
+      ],
+      "input_tokens": 386,
+      "elapsed_ns": 396751583
+    },
+    {
+      "id": "dev-003-0",
+      "group": "dev-003",
+      "rotation": 1,
+      "condition": "bare",
+      "selected": [
+        7,
+        11
+      ],
+      "correct_label": 3,
+      "correct": false,
+      "prompt": "Select the exact signed coefficient vector. Include multiplicity and sign; ignore excluded sources. Choose A, B, C or D.\n\nTrack the signed change in battery charge.\nFor source C, add its amount three times. For source D, subtract its amount twice. For source A, subtract its amount twice. For source B, add its amount once.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [-2, 1, 3, -1]\nB: [-2, -1, 3, -2]\nC: [-2, 1, 3, -2]\nD: [1, -2, 3, -2]\nAnswer: C\n\nTrack the signed change in battery charge.\nFor source B, subtract its amount once. For source C, add its amount twice. For source D, add its amount twice. For source A, add its amount once.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [1, -1, 2, 3]\nB: [-1, 1, 2, 2]\nC: [1, -1, 2, -2]\nD: [1, -1, 2, 2]\nAnswer: D\n\nTrack the signed change in battery charge.\nSubtract source A twice. Source B does not count. Source C does not count. Add source D twice.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [2, 0, 0, 2]\nB: [0, -2, 0, 2]\nC: [-2, 0, -2, 2]\nD: [-2, 0, 0, 2]\nAnswer:",
+      "prediction": 0,
+      "label_logits": [
+        17.625,
+        13.8125,
+        14.125,
+        15.6875
+      ],
+      "input_tokens": 384,
+      "elapsed_ns": 373984292
+    },
+    {
+      "id": "dev-003-0",
+      "group": "dev-003",
+      "rotation": 1,
+      "condition": "answer_prefix_space_labels",
+      "selected": [
+        7,
+        11
+      ],
+      "correct_label": 3,
+      "correct": true,
+      "prompt": "Select the exact signed coefficient vector. Include multiplicity and sign; ignore excluded sources. Choose A, B, C or D.\n\nTrack the signed change in battery charge.\nFor source C, add its amount three times. For source D, subtract its amount twice. For source A, subtract its amount twice. For source B, add its amount once.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [-2, 1, 3, -1]\nB: [-2, -1, 3, -2]\nC: [-2, 1, 3, -2]\nD: [1, -2, 3, -2]\nAnswer: C\n\nTrack the signed change in battery charge.\nFor source B, subtract its amount once. For source C, add its amount twice. For source D, add its amount twice. For source A, add its amount once.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [1, -1, 2, 3]\nB: [-1, 1, 2, 2]\nC: [1, -1, 2, -2]\nD: [1, -1, 2, 2]\nAnswer: D\n\nTrack the signed change in battery charge.\nSubtract source A twice. Source B does not count. Source C does not count. Add source D twice.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [2, 0, 0, 2]\nB: [0, -2, 0, 2]\nC: [-2, 0, -2, 2]\nD: [-2, 0, 0, 2]\nAnswer:",
+      "prediction": 3,
+      "label_logits": [
+        25.75,
+        22.5,
+        21.375,
+        36.5
+      ],
+      "input_tokens": 386,
+      "elapsed_ns": 379272209
+    },
+    {
+      "id": "dev-003-0",
+      "group": "dev-003",
+      "rotation": 2,
+      "condition": "bare",
+      "selected": [
+        7,
+        11
+      ],
+      "correct_label": 2,
+      "correct": false,
+      "prompt": "Select the exact signed coefficient vector. Include multiplicity and sign; ignore excluded sources. Choose A, B, C or D.\n\nTrack the signed change in battery charge.\nFor source C, add its amount three times. For source D, subtract its amount twice. For source A, subtract its amount twice. For source B, add its amount once.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [-2, 1, 3, -1]\nB: [-2, -1, 3, -2]\nC: [-2, 1, 3, -2]\nD: [1, -2, 3, -2]\nAnswer: C\n\nTrack the signed change in battery charge.\nFor source B, subtract its amount once. For source C, add its amount twice. For source D, add its amount twice. For source A, add its amount once.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [1, -1, 2, 3]\nB: [-1, 1, 2, 2]\nC: [1, -1, 2, -2]\nD: [1, -1, 2, 2]\nAnswer: D\n\nTrack the signed change in battery charge.\nSubtract source A twice. Source B does not count. Source C does not count. Add source D twice.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [0, -2, 0, 2]\nB: [-2, 0, -2, 2]\nC: [-2, 0, 0, 2]\nD: [2, 0, 0, 2]\nAnswer:",
+      "prediction": 0,
+      "label_logits": [
+        17.625,
+        13.5,
+        14.125,
+        15.5
+      ],
+      "input_tokens": 384,
+      "elapsed_ns": 366829208
+    },
+    {
+      "id": "dev-003-0",
+      "group": "dev-003",
+      "rotation": 2,
+      "condition": "answer_prefix_space_labels",
+      "selected": [
+        7,
+        11
+      ],
+      "correct_label": 2,
+      "correct": true,
+      "prompt": "Select the exact signed coefficient vector. Include multiplicity and sign; ignore excluded sources. Choose A, B, C or D.\n\nTrack the signed change in battery charge.\nFor source C, add its amount three times. For source D, subtract its amount twice. For source A, subtract its amount twice. For source B, add its amount once.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [-2, 1, 3, -1]\nB: [-2, -1, 3, -2]\nC: [-2, 1, 3, -2]\nD: [1, -2, 3, -2]\nAnswer: C\n\nTrack the signed change in battery charge.\nFor source B, subtract its amount once. For source C, add its amount twice. For source D, add its amount twice. For source A, add its amount once.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [1, -1, 2, 3]\nB: [-1, 1, 2, 2]\nC: [1, -1, 2, -2]\nD: [1, -1, 2, 2]\nAnswer: D\n\nTrack the signed change in battery charge.\nSubtract source A twice. Source B does not count. Source C does not count. Add source D twice.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [0, -2, 0, 2]\nB: [-2, 0, -2, 2]\nC: [-2, 0, 0, 2]\nD: [2, 0, 0, 2]\nAnswer:",
+      "prediction": 2,
+      "label_logits": [
+        26.25,
+        21.125,
+        35.75,
+        25.125
+      ],
+      "input_tokens": 386,
+      "elapsed_ns": 380019167
+    },
+    {
+      "id": "dev-003-0",
+      "group": "dev-003",
+      "rotation": 3,
+      "condition": "bare",
+      "selected": [
+        7,
+        11
+      ],
+      "correct_label": 1,
+      "correct": false,
+      "prompt": "Select the exact signed coefficient vector. Include multiplicity and sign; ignore excluded sources. Choose A, B, C or D.\n\nTrack the signed change in battery charge.\nFor source C, add its amount three times. For source D, subtract its amount twice. For source A, subtract its amount twice. For source B, add its amount once.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [-2, 1, 3, -1]\nB: [-2, -1, 3, -2]\nC: [-2, 1, 3, -2]\nD: [1, -2, 3, -2]\nAnswer: C\n\nTrack the signed change in battery charge.\nFor source B, subtract its amount once. For source C, add its amount twice. For source D, add its amount twice. For source A, add its amount once.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [1, -1, 2, 3]\nB: [-1, 1, 2, 2]\nC: [1, -1, 2, -2]\nD: [1, -1, 2, 2]\nAnswer: D\n\nTrack the signed change in battery charge.\nSubtract source A twice. Source B does not count. Source C does not count. Add source D twice.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [-2, 0, -2, 2]\nB: [-2, 0, 0, 2]\nC: [2, 0, 0, 2]\nD: [0, -2, 0, 2]\nAnswer:",
+      "prediction": 0,
+      "label_logits": [
+        17.375,
+        13.4375,
+        13.875,
+        15.3125
+      ],
+      "input_tokens": 384,
+      "elapsed_ns": 368300875
+    },
+    {
+      "id": "dev-003-0",
+      "group": "dev-003",
+      "rotation": 3,
+      "condition": "answer_prefix_space_labels",
+      "selected": [
+        7,
+        11
+      ],
+      "correct_label": 1,
+      "correct": true,
+      "prompt": "Select the exact signed coefficient vector. Include multiplicity and sign; ignore excluded sources. Choose A, B, C or D.\n\nTrack the signed change in battery charge.\nFor source C, add its amount three times. For source D, subtract its amount twice. For source A, subtract its amount twice. For source B, add its amount once.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [-2, 1, 3, -1]\nB: [-2, -1, 3, -2]\nC: [-2, 1, 3, -2]\nD: [1, -2, 3, -2]\nAnswer: C\n\nTrack the signed change in battery charge.\nFor source B, subtract its amount once. For source C, add its amount twice. For source D, add its amount twice. For source A, add its amount once.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [1, -1, 2, 3]\nB: [-1, 1, 2, 2]\nC: [1, -1, 2, -2]\nD: [1, -1, 2, 2]\nAnswer: D\n\nTrack the signed change in battery charge.\nSubtract source A twice. Source B does not count. Source C does not count. Add source D twice.\nWhich coefficient vector in A, B, C, D order represents this change?\nA: [-2, 0, -2, 2]\nB: [-2, 0, 0, 2]\nC: [2, 0, 0, 2]\nD: [0, -2, 0, 2]\nAnswer:",
+      "prediction": 1,
+      "label_logits": [
+        25.375,
+        36.0,
+        27.75,
+        26.375
+      ],
+      "input_tokens": 386,
+      "elapsed_ns": 378932792
+    }
+  ],
+  "wrapper_checks": [
+    {
+      "id": "dev-000-0",
+      "rotation": 0,
+      "condition": "bare",
+      "full_wrapper_label_logits": [
+        18.0,
+        13.875,
+        14.375,
+        16.0
+      ],
+      "chunk_label_logits": [
+        18.25,
+        14.0625,
+        14.5,
+        16.375
+      ],
+      "max_abs_label_delta": 0.375,
+      "full_prediction": 0,
+      "chunk_prediction": 0,
+      "same_argmax": true,
+      "label_delta_below_half_logit": true,
+      "input_tokens": 387,
+      "elapsed_ns": 454634375
+    },
+    {
+      "id": "dev-003-0",
+      "rotation": 0,
+      "condition": "answer_prefix_space_labels",
+      "full_wrapper_label_logits": [
+        36.25,
+        22.125,
+        22.375,
+        21.25
+      ],
+      "chunk_label_logits": [
+        36.5,
+        22.875,
+        22.75,
+        21.75
+      ],
+      "max_abs_label_delta": 0.75,
+      "full_prediction": 0,
+      "chunk_prediction": 0,
+      "same_argmax": true,
+      "label_delta_below_half_logit": false,
+      "input_tokens": 386,
+      "elapsed_ns": 472654875
+    }
+  ],
+  "summary": {
+    "bare": {
+      "individual_presentations": 16,
+      "correct_presentations": 4,
+      "label_counts": {
+        "A": 16
+      },
+      "four_rotation_correct_cases": 0,
+      "pooled": [
+        {
+          "id": "dev-000-0",
+          "mean_logits_by_original_candidate": [
+            15.875,
+            15.78125,
+            15.84375,
+            15.765625
+          ],
+          "prediction": 0,
+          "correct_label": 2,
+          "correct": false
+        },
+        {
+          "id": "dev-001-0",
+          "mean_logits_by_original_candidate": [
+            15.78125,
+            15.6875,
+            15.75,
+            15.75
+          ],
+          "prediction": 0,
+          "correct_label": 1,
+          "correct": false
+        },
+        {
+          "id": "dev-002-0",
+          "mean_logits_by_original_candidate": [
+            15.59375,
+            15.515625,
+            15.53125,
+            15.546875
+          ],
+          "prediction": 0,
+          "correct_label": 1,
+          "correct": false
+        },
+        {
+          "id": "dev-003-0",
+          "mean_logits_by_original_candidate": [
+            15.21875,
+            15.234375,
+            15.25,
+            15.21875
+          ],
+          "prediction": 2,
+          "correct_label": 0,
+          "correct": false
+        }
+      ]
+    },
+    "answer_prefix_space_labels": {
+      "individual_presentations": 16,
+      "correct_presentations": 12,
+      "label_counts": {
+        "C": 4,
+        "A": 5,
+        "D": 5,
+        "B": 2
+      },
+      "four_rotation_correct_cases": 3,
+      "pooled": [
+        {
+          "id": "dev-000-0",
+          "mean_logits_by_original_candidate": [
+            26.5,
+            26.1875,
+            33.09375,
+            28.40625
+          ],
+          "prediction": 2,
+          "correct_label": 2,
+          "correct": true
+        },
+        {
+          "id": "dev-001-0",
+          "mean_logits_by_original_candidate": [
+            29.59375,
+            33.5625,
+            23.8125,
+            25.21875
+          ],
+          "prediction": 1,
+          "correct_label": 1,
+          "correct": true
+        },
+        {
+          "id": "dev-002-0",
+          "mean_logits_by_original_candidate": [
+            28.125,
+            30.6875,
+            31.3125,
+            33.40625
+          ],
+          "prediction": 3,
+          "correct_label": 1,
+          "correct": false
+        },
+        {
+          "id": "dev-003-0",
+          "mean_logits_by_original_candidate": [
+            36.1875,
+            25.375,
+            24.46875,
+            22.40625
+          ],
+          "prediction": 0,
+          "correct_label": 0,
+          "correct": true
+        }
+      ]
+    }
+  },
+  "meta": {
+    "checkpoint_sha256": {
+      "config.json": "507a6701220524eb8b283425bf0856a9ae4f21f4052e563896ddd668994b1dc7",
+      "model.safetensors": "0e86d9677e519323849eac1bc272caae88567a481ff188c431f70be543d9995f",
+      "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+    },
+    "mlx_peak_active_bytes": 1584367864,
+    "process_maxrss_bytes": 1318338560,
+    "model_calls": 34,
+    "head_check_max_abs": 0.1875,
+    "chunk_check_max_abs": 0.09375,
+    "software": {
+      "mlx": "0.32.3",
+      "mlx-lm": "0.31.3"
+    }
+  },
+  "interpretation": "Four selected development cases only; prefix and label tokenisation change together. No fresh efficacy claim or isolated causal attribution."
+}

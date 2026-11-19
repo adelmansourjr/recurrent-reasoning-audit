@@ -1,0 +1,323 @@
+{
+  "freeze": {
+    "protocol_sha256": "3ebb4c36f8af00af0737a943458cd2853bf0502320f9c9af150e421d40c6037b",
+    "source_sha256": "e0409b8f32d4824995ccbe5deb9aaa841034327eed63555cd57c5d9a2e9a08b8",
+    "manifest_sha256": "bc258dafd811ce7011ee9ea496615c2586f08adda890e2c80180fc16d528b4e5",
+    "test_generated_before_model_run": true,
+    "seed": 991763
+  },
+  "pool_size": 16,
+  "core_size": 8,
+  "core": [
+    0,
+    2,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "sufficiency": {
+    "direct_edges": 60,
+    "two_edge_paths": 168,
+    "violations": 0,
+    "first_witnesses": []
+  },
+  "phases": {
+    "dev": {
+      "cases": 12,
+      "groups": 12,
+      "accuracy": {
+        "zero": 0.3333333333333333,
+        "random_11": 0.3333333333333333,
+        "random_29": 0.3333333333333333,
+        "random_47": 0.3333333333333333,
+        "lexical": 0.3333333333333333,
+        "mmr": 0.3333333333333333,
+        "diverse_core": 0.3333333333333333,
+        "model_core": 0.3333333333333333
+      },
+      "input_tokens": {
+        "zero": 1705,
+        "random_11": 4569,
+        "random_29": 4573,
+        "random_47": 4610,
+        "lexical": 4583,
+        "mmr": 4562,
+        "diverse_core": 4561,
+        "model_core": 4579
+      },
+      "max_prompt_tokens": 387,
+      "inference_elapsed_ns": {
+        "zero": 1985783584,
+        "random_11": 4705660917,
+        "random_29": 4808018417,
+        "random_47": 4841394960,
+        "lexical": 4696648542,
+        "mmr": 4604085041,
+        "diverse_core": 4622492792,
+        "model_core": 4673002625
+      },
+      "comparisons": {
+        "zero": {
+          "difference": 0.0,
+          "paired_cluster_95_interval": [
+            0.0,
+            0.0
+          ],
+          "simultaneous_95_interval": [
+            0.0,
+            0.0
+          ]
+        },
+        "random_11": {
+          "difference": 0.0,
+          "paired_cluster_95_interval": [
+            0.0,
+            0.0
+          ],
+          "simultaneous_95_interval": [
+            0.0,
+            0.0
+          ]
+        },
+        "random_29": {
+          "difference": 0.0,
+          "paired_cluster_95_interval": [
+            0.0,
+            0.0
+          ],
+          "simultaneous_95_interval": [
+            0.0,
+            0.0
+          ]
+        },
+        "random_47": {
+          "difference": 0.0,
+          "paired_cluster_95_interval": [
+            0.0,
+            0.0
+          ],
+          "simultaneous_95_interval": [
+            0.0,
+            0.0
+          ]
+        },
+        "lexical": {
+          "difference": 0.0,
+          "paired_cluster_95_interval": [
+            0.0,
+            0.0
+          ],
+          "simultaneous_95_interval": [
+            0.0,
+            0.0
+          ]
+        },
+        "mmr": {
+          "difference": 0.0,
+          "paired_cluster_95_interval": [
+            0.0,
+            0.0
+          ],
+          "simultaneous_95_interval": [
+            0.0,
+            0.0
+          ]
+        },
+        "diverse_core": {
+          "difference": 0.0,
+          "paired_cluster_95_interval": [
+            0.0,
+            0.0
+          ],
+          "simultaneous_95_interval": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "memory": {
+        "checkpoint_sha256": {
+          "config.json": "507a6701220524eb8b283425bf0856a9ae4f21f4052e563896ddd668994b1dc7",
+          "model.safetensors": "0e86d9677e519323849eac1bc272caae88567a481ff188c431f70be543d9995f",
+          "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+        },
+        "mlx_peak_active_bytes": 1256769732,
+        "process_maxrss_bytes": 1310801920,
+        "model_calls": 96,
+        "head_check_max_abs": 0.1875,
+        "chunk_check_max_abs": 0.09375,
+        "software": {
+          "mlx": "0.32.3",
+          "mlx-lm": "0.31.3"
+        }
+      }
+    },
+    "test": {
+      "cases": 128,
+      "groups": 64,
+      "accuracy": {
+        "zero": 0.25,
+        "random_11": 0.25,
+        "random_29": 0.25,
+        "random_47": 0.25,
+        "lexical": 0.25,
+        "mmr": 0.25,
+        "diverse_core": 0.25,
+        "model_core": 0.25
+      },
+      "input_tokens": {
+        "zero": 19696,
+        "random_11": 50327,
+        "random_29": 50371,
+        "random_47": 50299,
+        "lexical": 50479,
+        "mmr": 50348,
+        "diverse_core": 50197,
+        "model_core": 50359
+      },
+      "max_prompt_tokens": 404,
+      "inference_elapsed_ns": {
+        "zero": 22081282494,
+        "random_11": 54916646373,
+        "random_29": 55357212657,
+        "random_47": 55129795669,
+        "lexical": 55581691408,
+        "mmr": 54941275410,
+        "diverse_core": 54621013626,
+        "model_core": 55220414628
+      },
+      "comparisons": {
+        "zero": {
+          "difference": 0.0,
+          "paired_cluster_95_interval": [
+            0.0,
+            0.0
+          ],
+          "simultaneous_95_interval": [
+            0.0,
+            0.0
+          ]
+        },
+        "random_11": {
+          "difference": 0.0,
+          "paired_cluster_95_interval": [
+            0.0,
+            0.0
+          ],
+          "simultaneous_95_interval": [
+            0.0,
+            0.0
+          ]
+        },
+        "random_29": {
+          "difference": 0.0,
+          "paired_cluster_95_interval": [
+            0.0,
+            0.0
+          ],
+          "simultaneous_95_interval": [
+            0.0,
+            0.0
+          ]
+        },
+        "random_47": {
+          "difference": 0.0,
+          "paired_cluster_95_interval": [
+            0.0,
+            0.0
+          ],
+          "simultaneous_95_interval": [
+            0.0,
+            0.0
+          ]
+        },
+        "lexical": {
+          "difference": 0.0,
+          "paired_cluster_95_interval": [
+            0.0,
+            0.0
+          ],
+          "simultaneous_95_interval": [
+            0.0,
+            0.0
+          ]
+        },
+        "mmr": {
+          "difference": 0.0,
+          "paired_cluster_95_interval": [
+            0.0,
+            0.0
+          ],
+          "simultaneous_95_interval": [
+            0.0,
+            0.0
+          ]
+        },
+        "diverse_core": {
+          "difference": 0.0,
+          "paired_cluster_95_interval": [
+            0.0,
+            0.0
+          ],
+          "simultaneous_95_interval": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "memory": {
+        "checkpoint_sha256": {
+          "config.json": "507a6701220524eb8b283425bf0856a9ae4f21f4052e563896ddd668994b1dc7",
+          "model.safetensors": "0e86d9677e519323849eac1bc272caae88567a481ff188c431f70be543d9995f",
+          "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+        },
+        "mlx_peak_active_bytes": 1256769732,
+        "process_maxrss_bytes": 1310736384,
+        "model_calls": 1024,
+        "head_check_max_abs": 0.1875,
+        "chunk_check_max_abs": 0.09375,
+        "software": {
+          "mlx": "0.32.3",
+          "mlx-lm": "0.31.3"
+        }
+      },
+      "primary_gate": {
+        "contrast": "model_core vs full-pool lexical",
+        "minimum_gain": 0.1,
+        "max_token_ratio": 1.1,
+        "observed_token_ratio": 0.9976227738267398,
+        "passed": false
+      },
+      "all_baselines_gate": false,
+      "by_template": {
+        "2": {
+          "zero": 0.25,
+          "random_11": 0.25,
+          "random_29": 0.25,
+          "random_47": 0.25,
+          "lexical": 0.25,
+          "mmr": 0.25,
+          "diverse_core": 0.25,
+          "model_core": 0.25
+        },
+        "3": {
+          "zero": 0.25,
+          "random_11": 0.25,
+          "random_29": 0.25,
+          "random_47": 0.25,
+          "lexical": 0.25,
+          "mmr": 0.25,
+          "diverse_core": 0.25,
+          "model_core": 0.25
+        }
+      }
+    }
+  },
+  "symbolic_grammar_ceiling": {
+    "correct": 128,
+    "cases": 128
+  }
+}

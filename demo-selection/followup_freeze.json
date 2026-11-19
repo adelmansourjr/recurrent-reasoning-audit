@@ -1,0 +1,8 @@
+{
+  "source_sha256": "d20923ec0f1848e3cc356bffedd8b23e6527b47272a365fffa0dc9e3f1ec223c",
+  "protocol_sha256": "7f8daa415fc14fa4642fb80de8f248cbc32224c498874a4e9fea6a01f38fc74d",
+  "manifest_sha256": "3427b00373e502cc0ac6ce64706d24654ab6237effb0a6dfd414fb65064ae52b",
+  "initial_freeze_sha256": "ff696a3c1bd434cd2715be6165c9f9101662c17378d3f47b58d82faa212c9dcf",
+  "historical_generator_sha256": "94783caff5cfb75dc7db4ee83b23895c63f4ee0279fb3169ea477f590c53fc1a",
+  "seed": 7239107
+}

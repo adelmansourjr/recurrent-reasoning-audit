@@ -1,0 +1,43 @@
+{
+  "scope": "Exploratory development-only diagnostic; no efficacy claim",
+  "reason": "Original pool and development readouts always selected A",
+  "source_sha256": "8993f0abc23e44dbb69c6f0a7aa572a03102673725c106b0b0efe63fc2f177a6",
+  "study_freeze": {
+    "protocol_sha256": "3ebb4c36f8af00af0737a943458cd2853bf0502320f9c9af150e421d40c6037b",
+    "source_sha256": "e0409b8f32d4824995ccbe5deb9aaa841034327eed63555cd57c5d9a2e9a08b8",
+    "manifest_sha256": "bc258dafd811ce7011ee9ea496615c2586f08adda890e2c80180fc16d528b4e5",
+    "test_generated_before_model_run": true,
+    "seed": 991763
+  },
+  "before_diagnostic_inference": true,
+  "ids": [
+    "dev-000-0",
+    "dev-001-0",
+    "dev-002-0",
+    "dev-003-0"
+  ],
+  "rotations": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "selector": "lexical; same selected demonstrations across target rotations",
+  "conditions": {
+    "bare": "Original Scorer.score, bare A-D tokens",
+    "answer_prefix_space_labels": "Append assistant Answer:; score leading-space A-D tokens"
+  },
+  "wrapper_checks": [
+    [
+      "dev-000-0",
+      0,
+      "bare"
+    ],
+    [
+      "dev-003-0",
+      0,
+      "answer_prefix_space_labels"
+    ]
+  ],
+  "memory_observed_abort_bytes": 2684354560
+}

@@ -1,0 +1,7 @@
+{
+  "protocol_sha256": "d02ed62ef4ffb01601e0cd5c45b48b775feb60ff4796e1cf08ebdab9eaab52cd",
+  "source_sha256": "5c8d2b3fe7b15f960defb435723f302da400e3ebfb1ecc04016253add92f0233",
+  "manifest_sha256": "bc258dafd811ce7011ee9ea496615c2586f08adda890e2c80180fc16d528b4e5",
+  "test_generated_before_model_run": true,
+  "seed": 991763
+}
